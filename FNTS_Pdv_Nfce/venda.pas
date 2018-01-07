@@ -2255,7 +2255,7 @@ begin
   end
   else
   begin
-    Imprime_display_teclado('Store Protheus 8.1 Seattle', 'Store Protheus 8.1 Seattle');
+    Imprime_display_teclado('Softlogus Sistemas ', 'Softlogus Sistemas');
     if iteclado_modelo = 1 then
     begin
       CloseTec44;
@@ -2376,7 +2376,7 @@ begin
   begin
     // abrir a comunicacao
     OpenTec44;
-    Imprime_display_teclado('Store Protheus 8.1 Seattle', 'Terminal iniciado com sucesso!');
+    Imprime_display_teclado('Softlogus Sistemas', 'Terminal iniciado com sucesso!');
   end;
 
   Carregando := False;
@@ -6231,19 +6231,22 @@ begin
       Imprime_display('          AGUARDE...  GERANDO NFC-E', CLWHITE, tiLivre);
       grid.Repaint;
       GerarNFCe(vAux);
-
       Imprime_display('          AGUARDE...  ASSINANDO NFC-E', CLWHITE, tiLivre);
       grid.Repaint;
       ACBRNFCe.NotasFiscais.Assinar;
 
       Imprime_display('          AGUARDE...  VALIDANDO NFC-E', CLWHITE, tiLivre);
       grid.Repaint;
-      ACBRNFCe.NotasFiscais.Validar;
+     ACBRNFCe.NotasFiscais.Validar;
+
+//       ACBrNFce.NotasFiscais.GerarNFe;
+//       ACBrNFce.NotasFiscais.Assinar;
+//       ACBrNFce.NotasFiscais.Valida;
 
       if ACBRNFCe.Configuracoes.Geral.FormaEmissao <> frmtOffLine  then begin
         Imprime_display('          AGUARDE...  ENVIANDO NFC-E', CLWHITE, tiLivre);
         grid.Repaint;
-        ACBRNFCe.Enviar(vNumLote, false, Sincrono);
+        ACBRNFCe.Enviar(vNumLote, true, Sincrono);
         if ACBRNFCe.NotasFiscais.Items[0].Confirmada then
         begin
           If ACBRNFCe.WebServices.Enviar.cStat = 100 then
