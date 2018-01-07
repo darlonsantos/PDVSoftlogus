@@ -16454,9 +16454,8 @@ object frmPrincipal: TfrmPrincipal
       FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
       FFFF}
     Stretch = True
-    ExplicitLeft = 252
-    ExplicitTop = -227
-    ExplicitHeight = 762
+    ExplicitLeft = -144
+    ExplicitTop = 149
   end
   object pstatus: TAdvOfficeStatusBar
     Left = 1419
@@ -16973,7 +16972,7 @@ object frmPrincipal: TfrmPrincipal
       object RibbonGroup3: TRibbonGroup
         Left = 106
         Top = 3
-        Width = 158
+        Width = 91
         Height = 86
         ActionManager = ActionManager1
         Caption = 'Cupom Eletr'#243'nico'
@@ -16981,7 +16980,7 @@ object frmPrincipal: TfrmPrincipal
         object SpeedButton2: TSpeedButton
           Left = 4
           Top = 3
-          Width = 151
+          Width = 85
           Height = 65
           Flat = True
           Glyph.Data = {
@@ -17124,7 +17123,7 @@ object frmPrincipal: TfrmPrincipal
     Left = 752
     Top = 472
     Bitmap = {
-      494C010108000D004C0010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C010108000D00500010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000003000000001002000000000000030
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
@@ -19168,8 +19167,7 @@ object frmPrincipal: TfrmPrincipal
                 ImageIndex = 5
               end
               item
-                Action = balanca
-                Caption = '&Balan'#231'a'
+                Action = actBalanca
                 ImageIndex = 6
               end
               item
