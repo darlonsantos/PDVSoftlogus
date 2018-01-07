@@ -35,6 +35,7 @@ implementation
 // -------------------------------------------------------------------------- //
 procedure TfrmUtiSplash.FormShow(Sender: TObject);
 begin
+  //DARLON SANTOS
   lblVersao.HTMLText.Clear;
   lblVersao.HTMLText.Add('<P align=' + QuotedStr('right')
     + '>Versão ' + ExeInfo1.fileVersion + '</P>');
