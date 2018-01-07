@@ -62,12 +62,8 @@ type
     mudarsenha: TAction;
     logoff: TAction;
     ACBrNFe1: TACBrNFe;
-    AdvSmoothButton4: TAdvSmoothButton;
-    AdvSmoothButton6: TAdvSmoothButton;
-    AdvSmoothButton7: TAdvSmoothButton;
     CheckCPF1: TACBrValidador;
     TestaCnpj: TACBrValidador;
-    AdvSmoothButton9: TAdvSmoothButton;
     GerenciarNFCe: TAction;
     DIretorio: TJvSelectDirectory;
     ActionList2: TActionList;
@@ -121,14 +117,10 @@ type
     procedure bt_menu07Click(Sender: TObject);
     procedure AdvMetroButton1Click(Sender: TObject);
     procedure cySpeedButton1Click(Sender: TObject);
-    procedure venderExecute(Sender: TObject);
-    procedure configuracoesExecute(Sender: TObject);
     procedure menu_fiscalExecute(Sender: TObject);
-    procedure balancaExecute(Sender: TObject);
     procedure ecfExecute(Sender: TObject);
     procedure sobreExecute(Sender: TObject);
     procedure sairExecute(Sender: TObject);
-    procedure GerenciarNFCeExecute(Sender: TObject);
     procedure actVendaExecute(Sender: TObject);
     procedure actBalancaExecute(Sender: TObject);
     procedure actNotasExecute(Sender: TObject);
@@ -451,17 +443,6 @@ begin
   begin
     Showmessage('Não foi possível concluir com a operação!' + #13 + 'Erro: Código de sequência não encontrado na tabela de códigos.');
   end;
-end;
-
-procedure TfrmPrincipal.configuracoesExecute(Sender: TObject);
-begin
-  frmsenha_supervisor := tfrmsenha_supervisor.create(self);
-  frmsenha_supervisor.showmodal;
-
-  if not bSupervisor_autenticado then
-    Exit;
-  frmconfig := tfrmconfig.create(self);
-  frmconfig.showmodal;
 end;
 
 procedure TfrmPrincipal.cySpeedButton1Click(Sender: TObject);
@@ -934,17 +915,6 @@ begin
   frmconfig_balanca.showmodal;
 end;
 
-procedure TfrmPrincipal.balancaExecute(Sender: TObject);
-begin
-  frmsenha_supervisor := tfrmsenha_supervisor.create(self);
-  frmsenha_supervisor.showmodal;
-
-  if not bSupervisor_autenticado then
-    Exit;
-  frmconfig_balanca := tfrmconfig_balanca.create(self);
-  frmconfig_balanca.showmodal;
-end;
-
 procedure TfrmPrincipal.bt_menu02Click(Sender: TObject);
 begin
 
@@ -968,24 +938,6 @@ begin
 end;
 
 // -------------------------------------------------------------------------- //
-
-procedure TfrmPrincipal.venderExecute(Sender: TObject);
-begin
-  CarregaSistemaVenda;
-end;
-
-procedure TfrmPrincipal.GerenciarNFCeExecute(Sender: TObject);
-begin
-  frmsenha_supervisor := tfrmsenha_supervisor.create(self);
-  frmsenha_supervisor.showmodal;
-
-  if not bSupervisor_autenticado then
-    Exit;
-
-  frmNotasconsumidor := tfrmNotasconsumidor.create(self);
-  frmNotasconsumidor.showmodal;
-  FreeAndNil(frmNotasconsumidor);
-end;
 
 procedure TfrmPrincipal.actBalancaExecute(Sender: TObject);
 begin
