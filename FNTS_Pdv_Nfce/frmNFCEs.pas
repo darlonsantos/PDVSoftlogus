@@ -26,7 +26,6 @@ type
     Button2: TButton;
     Button3: TButton;
     ds_nfce: TDataSource;
-    Button4: TButton;
     Label1: TLabel;
     Label2: TLabel;
     Label3: TLabel;
@@ -45,15 +44,17 @@ type
     qrNFCESITUACAO: TIntegerField;
     qrNFCETROCO: TFloatField;
     qrNFCEDES_SIT: TStringField;
-    qrNFCEHORA: TStringField;
     Panel3: TPanel;
     Panel4: TPanel;
     lbEnvio: TLabel;
     lbCancelamento: TLabel;
-    qrNFCEXML_CANCELAMENTO: TStringField;
     qrNFCECONTINGENCIA: TStringField;
     qrNFCEENVIADOCONTINGENCIA: TStringField;
     btn1: TButton;
+    qrNFCEMOTIVOCONTIGENCIA: TStringField;
+    qrNFCEXMLENVIO: TBlobField;
+    Button4: TButton;
+    qrNFCEXMLCACNELAMENTO: TBlobField;
     procedure Button4Click(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure Button2Click(Sender: TObject);
@@ -261,7 +262,7 @@ end;
 procedure TfrmNotasconsumidor.qrNFCEAfterScroll(DataSet: TDataSet);
 begin
   lbEnvio.Caption := 'XML de Envio: ' + qrNFCEXML.AsString;
-  lbCancelamento.Caption := 'XML de Cancelamento: ' + qrNFCEXML_CANCELAMENTO.AsString;
+  lbCancelamento.Caption := 'XML de Cancelamento: ' + qrNFCEXMLCACNELAMENTO.AsString;
 end;
 
 end.

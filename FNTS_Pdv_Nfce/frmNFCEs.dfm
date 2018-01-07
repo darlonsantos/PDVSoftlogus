@@ -11590,9 +11590,10 @@ object frmNotasconsumidor: TfrmNotasconsumidor
     Height = 73
     Align = alTop
     BevelOuter = bvNone
-    Color = clWindowFrame
+    Color = clWhite
     ParentBackground = False
     TabOrder = 0
+    ExplicitTop = -6
     object Label1: TLabel
       Left = 8
       Top = 32
@@ -11632,21 +11633,12 @@ object frmNotasconsumidor: TfrmNotasconsumidor
       Font.Style = []
       ParentFont = False
     end
-    object Button4: TButton
-      Left = 676
-      Top = 13
-      Width = 100
-      Height = 50
-      Caption = 'Filtrar'
-      TabOrder = 0
-      OnClick = Button4Click
-    end
     object edt_Numero: TEdit
       Left = 296
       Top = 31
       Width = 113
       Height = 21
-      TabOrder = 1
+      TabOrder = 0
     end
     object dataini: TsDateEdit
       Left = 88
@@ -11663,7 +11655,7 @@ object frmNotasconsumidor: TfrmNotasconsumidor
       Font.Style = []
       MaxLength = 10
       ParentFont = False
-      TabOrder = 2
+      TabOrder = 1
       Text = '  /  /    '
       CheckOnExit = True
       SkinData.SkinSection = 'EDIT'
@@ -11685,7 +11677,7 @@ object frmNotasconsumidor: TfrmNotasconsumidor
       Font.Style = []
       MaxLength = 10
       ParentFont = False
-      TabOrder = 3
+      TabOrder = 2
       Text = '  /  /    '
       CheckOnExit = True
       SkinData.SkinSection = 'EDIT'
@@ -11700,11 +11692,12 @@ object frmNotasconsumidor: TfrmNotasconsumidor
     Height = 60
     Align = alBottom
     BevelOuter = bvNone
-    Color = clWindowFrame
+    Color = clWhite
     ParentBackground = False
     TabOrder = 1
+    ExplicitTop = 444
     object Button1: TButton
-      Left = 112
+      Left = 324
       Top = 6
       Width = 100
       Height = 50
@@ -11719,7 +11712,7 @@ object frmNotasconsumidor: TfrmNotasconsumidor
       OnClick = Button1Click
     end
     object Button2: TButton
-      Left = 216
+      Left = 428
       Top = 6
       Width = 100
       Height = 50
@@ -11728,7 +11721,7 @@ object frmNotasconsumidor: TfrmNotasconsumidor
       OnClick = Button2Click
     end
     object Button3: TButton
-      Left = 6
+      Left = 218
       Top = 6
       Width = 100
       Height = 50
@@ -11737,14 +11730,22 @@ object frmNotasconsumidor: TfrmNotasconsumidor
       OnClick = Button3Click
     end
     object btn1: TButton
-      Left = 322
+      Left = 534
       Top = 6
       Width = 115
       Height = 50
       Caption = 'Inutulizar NFC-e'
       TabOrder = 3
-      Visible = False
       OnClick = btn1Click
+    end
+    object Button4: TButton
+      Left = 655
+      Top = 6
+      Width = 100
+      Height = 50
+      Caption = 'Filtrar'
+      TabOrder = 4
+      OnClick = Button4Click
     end
   end
   object JvDBGrid1: TJvDBGrid
@@ -11895,7 +11896,7 @@ object frmNotasconsumidor: TfrmNotasconsumidor
     Left = 588
     Top = 273
     Bitmap = {
-      494C010102000500280010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C0101020005002C0010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000001000000001002000000000000010
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
@@ -12083,14 +12084,6 @@ object frmNotasconsumidor: TfrmNotasconsumidor
       FixedChar = True
       Size = 9
     end
-    object qrNFCEHORA: TStringField
-      FieldName = 'HORA'
-      Size = 8
-    end
-    object qrNFCEXML_CANCELAMENTO: TStringField
-      FieldName = 'XML_CANCELAMENTO'
-      Size = 255
-    end
     object qrNFCECONTINGENCIA: TStringField
       FieldName = 'CONTINGENCIA'
       Size = 1
@@ -12098,6 +12091,16 @@ object frmNotasconsumidor: TfrmNotasconsumidor
     object qrNFCEENVIADOCONTINGENCIA: TStringField
       FieldName = 'ENVIADOCONTINGENCIA'
       Size = 1
+    end
+    object qrNFCEMOTIVOCONTIGENCIA: TStringField
+      FieldName = 'MOTIVOCONTIGENCIA'
+      Size = 255
+    end
+    object qrNFCEXMLENVIO: TBlobField
+      FieldName = 'XMLENVIO'
+    end
+    object qrNFCEXMLCACNELAMENTO: TBlobField
+      FieldName = 'XMLCACNELAMENTO'
     end
   end
 end
