@@ -5203,8 +5203,8 @@ object frmModulo: TfrmModulo
   end
   object ACBRDANFENFCe: TACBrNFeDANFEFR
     ACBrNFe = ACBRNFCe
-    Logo = 'C:\Softlogus\PDV\Img\logo-nfce.jpg'
-    PathPDF = 'C:\Softlogus\PDV\xml\'
+    Logo = 'C:\Store_Protheus\PDV\Img\logo-nfce.jpg'
+    PathPDF = 'C:\Store_Protheus\PDV\xml\'
     Impressora = 'CutePDF Writer'
     MostrarPreview = False
     MostrarStatus = True

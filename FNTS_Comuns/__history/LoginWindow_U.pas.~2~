@@ -40,6 +40,7 @@ type
     lbl8: TLabel;
     lbl9: TLabel;
     LbUsuario: TLabel;
+    img1: TImage;
     BtCancela: TsBitBtn;
     lbl7: TLabel;
     LbSenha: TLabel;
@@ -140,4 +141,3 @@ begin
 end;
 
 end.
-

@@ -86,7 +86,6 @@ type
     img_fechamento: TAdvOfficeImage;
     lbTotal: TRzLabel;
     lbCodBarras: TRzLabel;
-    img_produto: TImage;
     ed_barra: TRzEdit;
     Panel1: TPanel;
     Button1: TButton;
@@ -200,7 +199,6 @@ type
     actmgr1: TActionManager;
     act1: TAction;
     TimerTroco: TTimer;
-    lbl333: TRzLabel;
     imgCinza: TImage;
     imgAmarela: TImage;
     imgVerde: TImage;
@@ -271,8 +269,9 @@ type
     qrContingenciaXMLCACNELAMENTO: TBlobField;
     DataLocal: TLabel;
     hora: TTimer;
-    HoraLocal: TLabel;
-    Titulo: TLabel;
+    img_produto: TImage;
+    img_foto: TImage;
+    Image3: TImage;
 
     function TEF_Cartao(bandeira: Tbandeira_tef): boolean;
     function TEF_Cheque(bandeira: Tbandeira_tef): boolean;
@@ -401,6 +400,7 @@ type
     procedure tmr1Timer(Sender: TObject);
     procedure horaTimer(Sender: TObject);
     procedure imgOffClick(Sender: TObject);
+    procedure lbStatusClick(Sender: TObject);
   private
     { Private declarations }
     a, b: word;
@@ -542,7 +542,7 @@ BEGIN
     tmContigencia.Enabled := false;
     lbStatus.Visible := True;
     lbStatus.Caption := 'ON-LINE';
-    lbStatus.Font.Color := $00004000;
+    lbStatus.Font.Color := $00D5AA5B;
     imgON.Visible := True;
     imgOff.Visible := False;
     frmModulo.ACBRNFCe.Configuracoes.Geral.FormaEmissao := StrToTpEmis(Ok, IntToStr(rgFormaEmissao + 1));
@@ -581,7 +581,7 @@ begin
       try
         ed_barra.Enabled := False;
         while not qrContingencia.Eof do begin
-          Imprime_display('   AGUARDE...  ENVIENDO CONTINGENCIAS',clGreen, tiLivre);
+          Imprime_display('   AGUARDE...  ENVIANDO CONTINGENCIAS',clGreen, tiLivre);
           with frmModulo do begin
             LerConfiguracao;
             if EdFormatoOff = 0 then
@@ -1992,6 +1992,11 @@ begin
   Imprime_display(sTexto_anterior, clCor_anterior, TiImagem_anterior);
 end;
 
+procedure TfrmVenda.lbStatusClick(Sender: TObject);
+begin
+
+end;
+
 // -------------------------------------------------------------------------- //
 // Funcao para iniciar a venda
 
@@ -2385,6 +2390,32 @@ var bDados_balanca: boolean;
   sx_barra: string;
 
 begin
+     // Introdução da foto do produto
+    if key = #13 then
+  begin
+    if ed_barra.Text <> '' then
+    begin
+      iPesquisa_produto := 1;
+      if frmVenda.Localizar_Produto(ed_barra.text) then
+       // lb_nome_produto.caption := sProd_nome;
+       // lb_preco.caption := FormatFloat('###,###,##0.00',rprod_preco);
+       // if bProd_promocao then
+         // lb_promocao.Visible := true else lb_promocao.Visible := false;
+        if bBusca_foto_produto then
+        begin
+          if FileExists(sPasta_foto_produto+'\'+sProd_barra+'.jpg') then
+            img_foto.Picture.LoadFromFile(sPasta_foto_produto+'\'+sProd_barra+'.jpg')
+          else
+            img_foto.Picture := nil;
+        end;
+      end
+      else
+      begin
+        img_foto.Picture := nil;
+      end;
+    end;
+    // fim da introdução
+
   if key = #13 then
   begin
     sx_barra := Trim(ed_barra.text);
@@ -2877,11 +2908,11 @@ begin
     begin
           //showmessage('É estacao');
       frmmodulo.cdsComandas.SaveToFile('\\' + frmmodulo.Conexao_Servidor.Server +
-        '\Store_Protheus\PDV\XML\W0' + frmModulo.mesa_comanda + str + '.xml');
+        '\Softlogus\PDV\XML\W0' + frmModulo.mesa_comanda + str + '.xml');
     end;
 
         // backup
-    frmmodulo.cdsComandas.SaveToFile('C:\Store_Protheus\PDV\XML\W0' +
+    frmmodulo.cdsComandas.SaveToFile('C:\Softlogus\PDV\XML\W0' +
       frmModulo.mesa_comanda + str + '.xml');
 
   end;
@@ -4467,7 +4498,7 @@ begin
             if edtPathLogs <> '' then
               NomeArquivo := edtPathLogs
             else
-              NomeArquivo := 'C:\Store_Protheus\PDV\xml';
+              NomeArquivo := 'C:\Softlogus\PDV\xml';
             if ACBRNFCe.Configuracoes.Arquivos.SepararPorModelo then
               NomeArquivo:=NomeArquivo + '\NFCe\';
             if ACBRNFCe.Configuracoes.Arquivos.SepararPorMes then
@@ -6230,7 +6261,7 @@ begin
         ChaveNFCE := ACBRNFCe.NotasFiscais.Items[0].NFe.infNFe.Id;
         NumeroNFCe := strtoint(vAux);
       end;
-      ACBRDANFENFCe.FastFile := 'C:\Store_Protheus\PDV\Schemas\DANFeNFCe.fr3';
+      ACBRDANFENFCe.FastFile := 'C:\Softlogus\PDV\Schemas\DANFeNFCe.fr3';
       if FileExists(frmPrincipal.LerINi(sConfiguracoes, 'PDV',
         'CAMINHO_LOGO', '')) then
         ACBRDANFENFCe.Logo := frmPrincipal.LerINi(sConfiguracoes, 'PDV',
@@ -6688,11 +6719,12 @@ begin
 end;
 
 procedure TfrmVenda.CorEditTotaL;
+ // Alteracao de cores PDV Fiscal ou Nao Fiscal
 begin
   if frmPrincipal.TipoImpressora = SemImpressora then
-    frmVenda.Color := $00404040
+    frmVenda.Color := clWhite
   else
-    frmVenda.Color := $00134017;
+    frmVenda.Color := $00646464;
 end;
 
 // -------------------------------------------------------------------------- //
@@ -8059,8 +8091,8 @@ end;
 
 procedure TfrmVenda.horaTimer(Sender: TObject);
 begin
-    DataLocal.caption := DateToStr(now);
-    HoraLocal.caption := TimeToStr(time);
+    DataLocal.caption := DateToStr(now) + ' / ' + TimeToStr(time);
+   // HoraLocal.caption := TimeToStr(time);
 end;
 
 procedure TfrmVenda.imgOffClick(Sender: TObject);
@@ -8884,11 +8916,11 @@ begin
         begin
           //showmessage('É estacao');
           frmmodulo.cdsComandas.SaveToFile('\\' + frmmodulo.Conexao_Servidor.Server +
-            '\Store_Protheus\PDV\XML\W0' + frmModulo.mesa_comanda + str + '.xml');
+            '\Softlogus\PDV\XML\W0' + frmModulo.mesa_comanda + str + '.xml');
         end;
 
         // backup
-        frmmodulo.cdsComandas.SaveToFile('C:\Store_Protheus\PDV\XML\W0' +
+        frmmodulo.cdsComandas.SaveToFile('C:\Softlogus\PDV\XML\W0' +
           frmModulo.mesa_comanda + str + '.xml');
 
       end;
@@ -8933,11 +8965,11 @@ begin
         begin
           //showmessage('É estacao');
           frmmodulo.cdsComandas.SaveToFile('\\' + frmmodulo.Conexao_Servidor.Server +
-            '\Store_Protheus\PDV\XML\W0' + frmModulo.mesa_comanda + str + '.xml');
+            '\Softlogus\PDV\XML\W0' + frmModulo.mesa_comanda + str + '.xml');
         end;
 
         // backup
-        frmmodulo.cdsComandas.SaveToFile('C:\Store_Protheus\PDV\XML\W0' +
+        frmmodulo.cdsComandas.SaveToFile('C:\Softlogus\PDV\XML\W0' +
           frmModulo.mesa_comanda + str + '.xml');
 
       end;

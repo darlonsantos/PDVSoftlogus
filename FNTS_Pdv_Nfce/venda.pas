@@ -496,7 +496,7 @@ uses modulo, Math, funcoes, cliente_consulta, preco_consulta,
   produto_consulta, protetor_tela, consumidor, venda_crediario, unECF,
   Leitura_Memoria_Fiscal, Download_MFD, Arquivo_Fiscal,
   Identifica, Tef_bandeira, unTEF, caixa_fechamento, sangria, suprimento,
-  TEF_Cancelamento, senha, menu_cupom, Lista_DAV, pre_venda, msg_Operador,
+  TEF_Cancelamento, menu_cupom, Lista_DAV, pre_venda, msg_Operador,
   Meios_pagamento, Orcamento_Abrir, menu_fiscal, IniFiles, contasreceber,
   os, caixa_abertura, mesas, fabricacao, senha_supervisor, ComObj,
   Constantes, Vendedor, UFuncoes, Comanda;
