@@ -81,6 +81,12 @@ type
     cxImageList1: TcxImageList;
     dxBarManager1: TdxBarManager;
     dxTabbedMDIManager1: TdxTabbedMDIManager;
+    RibbonPage2: TRibbonPage;
+    RibbonGroup2: TRibbonGroup;
+    SpeedButton1: TSpeedButton;
+    RibbonGroup3: TRibbonGroup;
+    SpeedButton2: TSpeedButton;
+    SpeedButton3: TSpeedButton;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure FormCreate(Sender: TObject);
     procedure FormShow(Sender: TObject);
