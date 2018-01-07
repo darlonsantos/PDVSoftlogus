@@ -499,7 +499,7 @@ uses modulo, Math, funcoes, cliente_consulta, preco_consulta,
   TEF_Cancelamento, menu_cupom, Lista_DAV, pre_venda, msg_Operador,
   Meios_pagamento, Orcamento_Abrir, menu_fiscal, IniFiles, contasreceber,
   os, caixa_abertura, mesas, fabricacao, senha_supervisor, ComObj,
-  Constantes, Vendedor, UFuncoes, Comanda;
+  Constantes, Vendedor, UFuncoes, Comanda, senha;
 
 {$R *.dfm}
 
