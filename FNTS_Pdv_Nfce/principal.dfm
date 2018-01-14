@@ -2,7 +2,7 @@ object frmPrincipal: TfrmPrincipal
   Left = 403
   Top = 97
   BorderStyle = bsSingle
-  Caption = 'Sistema de ponto de Venas'
+  Caption = 'Sistema de ponto de venda Softlogus'
   ClientHeight = 850
   ClientWidth = 1385
   Color = clWindow
