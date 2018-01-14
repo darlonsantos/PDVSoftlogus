@@ -6,7 +6,7 @@ object frmconfig_balanca: Tfrmconfig_balanca
   Caption = 'Configurador de Balan'#231'as'
   ClientHeight = 262
   ClientWidth = 346
-  Color = 5461077
+  Color = clWhite
   Font.Charset = ANSI_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
@@ -24,7 +24,7 @@ object frmconfig_balanca: Tfrmconfig_balanca
     Width = 212
     Height = 242
     Caption = 'Balan'#231'a PDV'
-    Color = 5461077
+    Color = clWhite
     Font.Charset = ANSI_CHARSET
     Font.Color = clWhite
     Font.Height = -11
@@ -372,7 +372,7 @@ object frmconfig_balanca: Tfrmconfig_balanca
     Width = 114
     Height = 393
     BevelOuter = bvNone
-    Color = 5460819
+    Color = clWhite
     ParentBackground = False
     TabOrder = 3
     object AdvGlowButton1: TAdvGlowButton
@@ -382,7 +382,7 @@ object frmconfig_balanca: Tfrmconfig_balanca
       Height = 59
       Caption = 'Gravar'
       Font.Charset = ANSI_CHARSET
-      Font.Color = clWhite
+      Font.Color = clBlack
       Font.Height = -11
       Font.Name = 'Tahoma'
       Font.Style = []
@@ -505,7 +505,7 @@ object frmconfig_balanca: Tfrmconfig_balanca
       Height = 59
       Caption = 'Cancelar'
       Font.Charset = ANSI_CHARSET
-      Font.Color = clWhite
+      Font.Color = clBlack
       Font.Height = -11
       Font.Name = 'Tahoma'
       Font.Style = []

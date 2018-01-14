@@ -208,10 +208,9 @@ object frmModulo: TfrmModulo
   object conexao: TUniConnection
     ProviderName = 'InterBase'
     Port = 3050
-    Database = 'C:\Store_Protheus\PDV\BD\NFCE_DATPDV.FDB'
+    Database = 'C:\Softlogus\PDV\BD\PDV.FDB'
     Username = 'sysdba'
     Server = 'localhost'
-    Connected = True
     LoginPrompt = False
     Left = 48
     Top = 24

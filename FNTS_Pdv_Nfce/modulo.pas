@@ -1389,7 +1389,7 @@ begin
     else
       ACBRNFCe.Configuracoes.WebServices.Ambiente := taHomologacao;
 
-    ACBRDANFENFCe.FastFile := 'C:\DANFeNFCe.fr3';
+    ACBRDANFENFCe.FastFile := 'C:\Softlogus\PDV\DANFeNFCe.fr3';
 
     edtProxyHost := Ini.ReadString('Proxy', 'Host', '');
     edtProxyPorta := Ini.ReadString('Proxy', 'Porta', '');
