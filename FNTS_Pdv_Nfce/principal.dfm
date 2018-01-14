@@ -2,7 +2,7 @@ object frmPrincipal: TfrmPrincipal
   Left = 403
   Top = 97
   BorderStyle = bsSingle
-  Caption = 'Ponto de Vendas - Emissor de NFC-e'
+  Caption = 'Sistema de ponto de Venas'
   ClientHeight = 850
   ClientWidth = 1385
   Color = clWindow
@@ -17123,7 +17123,7 @@ object frmPrincipal: TfrmPrincipal
     Left = 752
     Top = 472
     Bitmap = {
-      494C010108000D00500010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C010108000D00540010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000003000000001002000000000000030
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
@@ -19168,6 +19168,7 @@ object frmPrincipal: TfrmPrincipal
               end
               item
                 Action = actBalanca
+                Caption = '&Balan'#231'a'
                 ImageIndex = 6
               end
               item
