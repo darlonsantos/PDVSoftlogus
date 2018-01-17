@@ -219,7 +219,6 @@ type
     AdvOfficeImage1: TAdvOfficeImage;
     AdvOfficeImage3: TAdvOfficeImage;
     SaveDialog1: TSaveDialog;
-    Image2: TImage;
     Panel2: TPanel;
     Panel3: TPanel;
     Panel4: TPanel;
@@ -271,7 +270,7 @@ type
     hora: TTimer;
     img_produto: TImage;
     img_foto: TImage;
-    Image3: TImage;
+    Image2: TImage;
 
     function TEF_Cartao(bandeira: Tbandeira_tef): boolean;
     function TEF_Cheque(bandeira: Tbandeira_tef): boolean;
@@ -4439,6 +4438,7 @@ begin
         until sMsg = ok;
       end;
 
+
       if sMsg <> OK then
       begin
         Imprime_display(sMsg, clred, tiErro);
@@ -4528,7 +4528,8 @@ begin
             spNFCE_Insert.ParamByName('EnviadoContingencia').asstring := 'N';
             spNFCE_Insert.ParamByName('xmlenvio').LoadFromFile(NomeArquivo,ftBlob);
             spNFCE_Insert.ParamByName('xmlcacnelamento').asstring := '';
-            spNFCE_Insert.ExecProc;
+            spNFCE_Insert.Prepared;
+            spNFCE_Insert.Executing;
             Conexao_Servidor.AutoCommit := false;
             Conexao_Servidor.Commit;
           end;
@@ -6239,9 +6240,6 @@ begin
       grid.Repaint;
      ACBRNFCe.NotasFiscais.Validar;
 
-//       ACBrNFce.NotasFiscais.GerarNFe;
-//       ACBrNFce.NotasFiscais.Assinar;
-//       ACBrNFce.NotasFiscais.Valida;
 
       if ACBRNFCe.Configuracoes.Geral.FormaEmissao <> frmtOffLine  then begin
         Imprime_display('          AGUARDE...  ENVIANDO NFC-E', CLWHITE, tiLivre);
@@ -6281,7 +6279,7 @@ begin
       ACBRDANFENFCe.MargemSuperior := edMargSup;
       ACBRDANFENFCe.MargemInferior := edMarginf;
       ACBRDANFENFCe.MostrarPreview := edPreview;
-      ACBRNFCe.NotasFiscais.Imprimir;
+      //ACBRNFCe.NotasFiscais.Imprimir;
       ACBRNFCe.NotasFiscais.clear;
 
       if (cStatus = 100) or (frmModulo.ACBRNFCe.Configuracoes.Geral.FormaEmissao = frmtOffLine)  then
