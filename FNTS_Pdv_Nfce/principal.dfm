@@ -2372,15 +2372,12 @@ object frmPrincipal: TfrmPrincipal
     Fill.Glow = gmNone
     Version = '1.1.0.0'
     Align = alBottom
-    Visible = False
     TabOrder = 1
     ShowExpander = False
     ExpanderBorderColor = 14120964
     ExpanderColor = 14120964
     ExpanderDownColor = clNone
     ExpanderHoverColor = clNone
-    ExplicitLeft = -8
-    ExplicitTop = 826
     TMSStyle = 0
     OldHeight = 40.000000000000000000
     object Label1: TLabel
@@ -3406,7 +3403,7 @@ object frmPrincipal: TfrmPrincipal
       88A2388F884E74D78BFE6F000BFC67DEC2CFED76FBCB1CC7F182207C414475DD
       F982B9FBFFCFEBFFA78DBD0FF67EBA0FF63ED8FB60EFA72EE97F0600AD2EA100
       AF4341320000000049454E44AE426082}
-    TabOrder = 7
+    TabOrder = 6
     Version = '2.1.0.1'
     TMSStyle = 23
   end
@@ -3451,7 +3448,7 @@ object frmPrincipal: TfrmPrincipal
     Left = 752
     Top = 472
     Bitmap = {
-      494C010108000D00400010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C010108000D00440010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000003000000001002000000000000030
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
@@ -4100,8 +4097,8 @@ object frmPrincipal: TfrmPrincipal
           Visible = True
           ItemName = 'dxBarLargeButton6'
         end>
-      OneOnRow = True
-      Row = 1
+      OneOnRow = False
+      Row = 0
       UseOwnFont = False
       Visible = True
       WholeRow = False
@@ -4121,7 +4118,7 @@ object frmPrincipal: TfrmPrincipal
           Visible = True
           ItemName = 'dxBarLargeButton7'
         end>
-      OneOnRow = True
+      OneOnRow = False
       Row = 0
       UseOwnFont = False
       Visible = True

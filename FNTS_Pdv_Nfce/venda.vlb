@@ -277,9 +277,6 @@ Coordinates=3174,4632,133,58
 [qryEnviaContigenciaCLIENTE]
 Coordinates=1223,1717,187,36
 
-[Image2]
-Coordinates=636,4632,57,58
-
 [qrProdNCFE]
 Coordinates=4919,4632,88,58
 
@@ -900,5 +897,5 @@ Coordinates=1516,3026,151,36
 Coordinates=5609,4632,56,58
 
 []
-Coordinates=5675,4632,86,58
+Coordinates=636,4632,57,58
 

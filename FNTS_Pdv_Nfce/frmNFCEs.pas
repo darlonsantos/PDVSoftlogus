@@ -48,7 +48,6 @@ type
     Panel4: TPanel;
     lbEnvio: TLabel;
     lbCancelamento: TLabel;
-    qrNFCECONTINGENCIA: TStringField;
     qrNFCEENVIADOCONTINGENCIA: TStringField;
     btn1: TButton;
     qrNFCEMOTIVOCONTIGENCIA: TStringField;
