@@ -12,24 +12,24 @@ uses
   Vcl.ImgList, AdvSmoothButton, Vcl.Buttons, cyBaseSpeedButton, cySpeedButton,
   AdvMetroButton, AdvSmoothPanel, AdvSmoothExpanderPanel, dxGDIPlusClasses,
   Vcl.ExtCtrls, dxTileControl, cxClasses, dxCustomTileControl, IniFiles,
-  ACBrBAL, ACBrDevice, Vcl.PlatformDefaultStyleActnCtrls, Vcl.ActnMan,
-  Vcl.ToolWin, Vcl.ActnCtrls, Vcl.Ribbon, Vcl.RibbonLunaStyleActnCtrls,
-  cxGraphics, cxControls, cxLookAndFeels, cxLookAndFeelPainters, dxSkinsCore,
-  dxSkinBlack, dxSkinBlue, dxSkinBlueprint, dxSkinCaramel, dxSkinCoffee,
-  dxSkinDarkRoom, dxSkinDarkSide, dxSkinDevExpressDarkStyle,
-  dxSkinDevExpressStyle, dxSkinFoggy, dxSkinGlassOceans, dxSkinHighContrast,
-  dxSkiniMaginary, dxSkinLilian, dxSkinLiquidSky, dxSkinLondonLiquidSky,
-  dxSkinMcSkin, dxSkinMetropolis, dxSkinMetropolisDark, dxSkinMoneyTwins,
-  dxSkinOffice2007Black, dxSkinOffice2007Blue, dxSkinOffice2007Green,
-  dxSkinOffice2007Pink, dxSkinOffice2007Silver, dxSkinOffice2010Black,
-  dxSkinOffice2010Blue, dxSkinOffice2010Silver, dxSkinOffice2013DarkGray,
-  dxSkinOffice2013LightGray, dxSkinOffice2013White, dxSkinPumpkin, dxSkinSeven,
-  dxSkinSevenClassic, dxSkinSharp, dxSkinSharpPlus, dxSkinSilver,
-  dxSkinSpringTime, dxSkinStardust, dxSkinSummer2008, dxSkinTheAsphaltWorld,
-  dxSkinsDefaultPainters, dxSkinValentine, dxSkinVS2010, dxSkinWhiteprint,
-  dxSkinXmas2008Blue, dxSkinsdxBarPainter, cxPC, dxSkinscxPCPainter,
-  dxBarBuiltInMenu, dxTabbedMDI, dxBar, Vcl.ActnMenus, Vcl.RibbonActnMenus,
-  dxStatusBar, dxRibbonStatusBar;
+  ACBrBAL, ACBrDevice, ExeInfo, Vcl.ToolWin, Vcl.ActnMan, Vcl.ActnCtrls,
+  Vcl.Ribbon, Vcl.RibbonLunaStyleActnCtrls, dxSkinsCore, dxSkinBlack,
+  dxSkinBlue, dxSkinBlueprint, dxSkinCaramel, dxSkinCoffee, dxSkinDarkRoom,
+  dxSkinDarkSide, dxSkinDevExpressDarkStyle, dxSkinDevExpressStyle, dxSkinFoggy,
+  dxSkinGlassOceans, dxSkinHighContrast, dxSkiniMaginary, dxSkinLilian,
+  dxSkinLiquidSky, dxSkinLondonLiquidSky, dxSkinMcSkin, dxSkinMetropolis,
+  dxSkinMetropolisDark, dxSkinMoneyTwins, dxSkinOffice2007Black,
+  dxSkinOffice2007Blue, dxSkinOffice2007Green, dxSkinOffice2007Pink,
+  dxSkinOffice2007Silver, dxSkinOffice2010Black, dxSkinOffice2010Blue,
+  dxSkinOffice2010Silver, dxSkinOffice2013DarkGray, dxSkinOffice2013LightGray,
+  dxSkinOffice2013White, dxSkinPumpkin, dxSkinSeven, dxSkinSevenClassic,
+  dxSkinSharp, dxSkinSharpPlus, dxSkinSilver, dxSkinSpringTime, dxSkinStardust,
+  dxSkinSummer2008, dxSkinTheAsphaltWorld, dxSkinsDefaultPainters,
+  dxSkinValentine, dxSkinVS2010, dxSkinWhiteprint, dxSkinXmas2008Blue,
+  dxSkinsdxBarPainter, cxGraphics, dxBar, Vcl.ActnMenus, Vcl.RibbonActnMenus,
+  dxRibbon, dxRibbonMiniToolbar, dxRibbonRadialMenu, dxBarApplicationMenu,
+  cxControls, cxLookAndFeels, cxLookAndFeelPainters, dxRibbonSkins,
+  dxSkinsdxRibbonPainter, dxRibbonCustomizationForm, cxButtonEdit, cxBarEditItem;
 
 type
   TImpressora = (SemImpressora, NaoFiscal, Fiscal);
@@ -42,6 +42,8 @@ type
     AdvOfficeStatusBarOfficeStyler1: TAdvOfficeStatusBarOfficeStyler;
     ResizeKit1: TResizeKit;
     imgFundo: TImage;
+    AdvSmoothExpanderPanel3: TAdvSmoothExpanderPanel;
+    Label1: TLabel;
     AdvSmoothExpanderPanel4: TAdvSmoothExpanderPanel;
     store_protect: TLockApplication;
     FlatHint1: TFlatHint;
@@ -62,31 +64,47 @@ type
     mudarsenha: TAction;
     logoff: TAction;
     ACBrNFe1: TACBrNFe;
+    AdvSmoothButton4: TAdvSmoothButton;
+    AdvSmoothButton6: TAdvSmoothButton;
+    AdvSmoothButton7: TAdvSmoothButton;
     CheckCPF1: TACBrValidador;
     TestaCnpj: TACBrValidador;
+    AdvSmoothButton9: TAdvSmoothButton;
     GerenciarNFCe: TAction;
+    cySpeedButton1: TcySpeedButton;
     DIretorio: TJvSelectDirectory;
-    ActionList2: TActionList;
-    ActionManager1: TActionManager;
-    actVenda: TAction;
-    actBalanca: TAction;
-    actNotas: TAction;
-    actConfiguracoes: TAction;
-    dxRibbonStatusBar1: TdxRibbonStatusBar;
-    Ribbon1: TRibbon;
-    RibbonApplicationMenuBar1: TRibbonApplicationMenuBar;
-    RibbonQuickAccessToolbar1: TRibbonQuickAccessToolbar;
-    RibbonPage1: TRibbonPage;
-    RibbonGroup1: TRibbonGroup;
-    cxImageList1: TcxImageList;
+    ExeInfo1: TExeInfo;
     dxBarManager1: TdxBarManager;
-    dxTabbedMDIManager1: TdxTabbedMDIManager;
-    RibbonPage2: TRibbonPage;
-    RibbonGroup2: TRibbonGroup;
-    SpeedButton1: TSpeedButton;
-    RibbonGroup3: TRibbonGroup;
-    SpeedButton2: TSpeedButton;
-    SpeedButton3: TSpeedButton;
+    dxBarPopupMenu1: TdxBarPopupMenu;
+    cxImageList1: TcxImageList;
+    dxRibbonPopupMenu1: TdxRibbonPopupMenu;
+    dxBarApplicationMenu1: TdxBarApplicationMenu;
+    dxRibbonRadialMenu1: TdxRibbonRadialMenu;
+    dxRibbonMiniToolbar1: TdxRibbonMiniToolbar;
+    ActionManager1: TActionManager;
+    actVendas: TAction;
+    actRelatorio: TAction;
+    actConfiguracoes: TAction;
+    dxRibbon1Tab1: TdxRibbonTab;
+    dxRibbon1: TdxRibbon;
+    dxRibbon1Tab2: TdxRibbonTab;
+    dxBarButton2: TdxBarButton;
+    dxBarManager1Bar1: TdxBar;
+    dxBarLargeButton2: TdxBarLargeButton;
+    dxBarLargeButton4: TdxBarLargeButton;
+    cxBarEditItem2: TcxBarEditItem;
+    dxBarLargeButton5: TdxBarLargeButton;
+    dxBarManager1Bar2: TdxBar;
+    dxBarButton1: TdxBarButton;
+    dxBarLargeButton1: TdxBarLargeButton;
+    dxBarLargeButton3: TdxBarLargeButton;
+    dxBarButton3: TdxBarButton;
+    dxBarLargeButton6: TdxBarLargeButton;
+    dxBarManager1Bar3: TdxBar;
+    dxBarLargeButton7: TdxBarLargeButton;
+    dxBarManager1Bar4: TdxBar;
+    dxBarLargeButton8: TdxBarLargeButton;
+    dxBarLargeButton9: TdxBarLargeButton;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure FormCreate(Sender: TObject);
     procedure FormShow(Sender: TObject);
@@ -123,14 +141,15 @@ type
     procedure bt_menu07Click(Sender: TObject);
     procedure AdvMetroButton1Click(Sender: TObject);
     procedure cySpeedButton1Click(Sender: TObject);
+    procedure venderExecute(Sender: TObject);
+    procedure configuracoesExecute(Sender: TObject);
     procedure menu_fiscalExecute(Sender: TObject);
+    procedure balancaExecute(Sender: TObject);
     procedure ecfExecute(Sender: TObject);
     procedure sobreExecute(Sender: TObject);
     procedure sairExecute(Sender: TObject);
-    procedure actVendaExecute(Sender: TObject);
-    procedure actBalancaExecute(Sender: TObject);
-    procedure actNotasExecute(Sender: TObject);
-    procedure actConfiguracoesExecute(Sender: TObject);
+    procedure GerenciarNFCeExecute(Sender: TObject);
+    procedure actVendasExecute(Sender: TObject);
   private
     iImpressora, iGaveta: Integer;
     { Private declarations }
@@ -451,6 +470,17 @@ begin
   end;
 end;
 
+procedure TfrmPrincipal.configuracoesExecute(Sender: TObject);
+begin
+  frmsenha_supervisor := tfrmsenha_supervisor.create(self);
+  frmsenha_supervisor.showmodal;
+
+  if not bSupervisor_autenticado then
+    Exit;
+  frmconfig := tfrmconfig.create(self);
+  frmconfig.showmodal;
+end;
+
 procedure TfrmPrincipal.cySpeedButton1Click(Sender: TObject);
 begin
   form_ativar.ShowModal;
@@ -536,13 +566,13 @@ begin
   frmModulo := TfrmModulo.create(self);
 
   frmModulo.conexao.Connected := false;
-  frmModulo.conexao.Database := LerINi(ExtractFilePath(Application.ExeName) + 'CFG\cfg.ini', 'CONFIGURACOES', 'BDLOCAL', 'C:\Softlogus\pdv\bd\pdv.fdb');
+  frmModulo.conexao.Database := LerINi(ExtractFilePath(Application.ExeName) + 'CFG\cfg.ini', 'CONFIGURACOES', 'BDLOCAL', 'C:\store_protheus\pdv\bd\nfce_datpdv.fdb');
   frmModulo.conexao.Connected := true;
 
   try
     frmModulo.Conexao_Servidor.Connected := false;
     frmModulo.Conexao_Servidor.Server := LerINi(ExtractFilePath(Application.ExeName) + 'CFG\cfg.ini', 'CONFIGURACOES', 'SERVIDOR', 'localhost');
-    frmModulo.Conexao_Servidor.Database := LerINi(ExtractFilePath(Application.ExeName) + 'CFG\cfg.ini', 'CONFIGURACOES', 'BDSERVIDOR', 'C:\Softlogus\server\bd\base.fdb');
+    frmModulo.Conexao_Servidor.Database := LerINi(ExtractFilePath(Application.ExeName) + 'CFG\cfg.ini', 'CONFIGURACOES', 'BDSERVIDOR', 'C:\store_protheus\server\bd\base.fdb');
     frmModulo.Conexao_Servidor.Connected := true;
     bServidor_Conexao := true;
   except
@@ -823,7 +853,6 @@ end;
 
 procedure TfrmPrincipal.FormShow(Sender: TObject);
 begin
-imgFundo.Picture.LoadFromFile('C:\Softlogus\server\img\logo.jpg');
 //informações de ativação do sistema
    Form_ativar.label1.Caption := '';
    Form_ativar.label1.Caption := 'Chave Nº:................. '+ IntToStr(frmPrincipal.store_protect.IDInstalacao) + #13;
@@ -844,7 +873,7 @@ imgFundo.Picture.LoadFromFile('C:\Softlogus\server\img\logo.jpg');
    Form_ativar.dados.Lines.Add(  frmPrincipal.store_protect.Cliente_Estado );
    Form_ativar.dados.Lines.Add(  frmPrincipal.store_protect.Cliente_Telefone );
  //fim
- //imgFundo.Picture.LoadFromFile('C:\Softlogus\PDV\img\fundopdv.jpg');
+ //imgFundo.Picture.LoadFromFile('C:\store_protheus\PDV\img\fundopdv.jpg');
 end;
 
 // -------------------------------------------------------------------------- //
@@ -921,6 +950,17 @@ begin
   frmconfig_balanca.showmodal;
 end;
 
+procedure TfrmPrincipal.balancaExecute(Sender: TObject);
+begin
+  frmsenha_supervisor := tfrmsenha_supervisor.create(self);
+  frmsenha_supervisor.showmodal;
+
+  if not bSupervisor_autenticado then
+    Exit;
+  frmconfig_balanca := tfrmconfig_balanca.create(self);
+  frmconfig_balanca.showmodal;
+end;
+
 procedure TfrmPrincipal.bt_menu02Click(Sender: TObject);
 begin
 
@@ -945,31 +985,14 @@ end;
 
 // -------------------------------------------------------------------------- //
 
-procedure TfrmPrincipal.actBalancaExecute(Sender: TObject);
+procedure TfrmPrincipal.venderExecute(Sender: TObject);
 begin
-frmsenha_supervisor := tfrmsenha_supervisor.create(self);
-  frmsenha_supervisor.showmodal;
-
-  if not bSupervisor_autenticado then
-    Exit;
-  frmconfig_balanca := tfrmconfig_balanca.create(self);
-  frmconfig_balanca.showmodal;
+  CarregaSistemaVenda;
 end;
 
-procedure TfrmPrincipal.actConfiguracoesExecute(Sender: TObject);
+procedure TfrmPrincipal.GerenciarNFCeExecute(Sender: TObject);
 begin
   frmsenha_supervisor := tfrmsenha_supervisor.create(self);
-  frmsenha_supervisor.showmodal;
-
-  if not bSupervisor_autenticado then
-    Exit;
-  frmconfig := tfrmconfig.create(self);
-  frmconfig.showmodal;
-end;
-
-procedure TfrmPrincipal.actNotasExecute(Sender: TObject);
-begin
- frmsenha_supervisor := tfrmsenha_supervisor.create(self);
   frmsenha_supervisor.showmodal;
 
   if not bSupervisor_autenticado then
@@ -980,9 +1003,9 @@ begin
   FreeAndNil(frmNotasconsumidor);
 end;
 
-procedure TfrmPrincipal.actVendaExecute(Sender: TObject);
+procedure TfrmPrincipal.actVendasExecute(Sender: TObject);
 begin
-    CarregaSistemaVenda;
+CarregaSistemaVenda;
 end;
 
 procedure TfrmPrincipal.AdvGlowButton175Click(Sender: TObject);
