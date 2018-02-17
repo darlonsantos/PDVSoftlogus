@@ -146,7 +146,7 @@ CARTA DE COBRANÇA - Registro SPC/SERASA}
 
 
     frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring := emitente_cidade + FormatDateTime('", "dddd", "d" de "mmmm" de "yyyy', date);
-    FXCLIENTE.LoadFromFile('\Store_Protheus\server\rel\F000056.fr3');
+    FXCLIENTE.LoadFromFile('\Softlogus\server\rel\F000056.fr3');
     FXCLIENTE.ShowReport;
   end;
 
@@ -174,7 +174,7 @@ CARTA DE COBRANÇA - Registro SPC/SERASA}
 
 
     frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring := emitente_cidade + FormatDateTime('", "dddd", "d" de "mmmm" de "yyyy', date);
-    FXCLIENTE.LoadFromFile('\Store_Protheus\server\rel\F000057.fr3');
+    FXCLIENTE.LoadFromFile('\Softlogus\server\rel\F000057.fr3');
     FXCLIENTE.ShowReport;
   end;
 
@@ -200,7 +200,7 @@ CARTA DE COBRANÇA - Registro SPC/SERASA}
 
 
     frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring := emitente_cidade + FormatDateTime('", "dddd", "d" de "mmmm" de "yyyy', date);
-    FXCLIENTE.LoadFromFile('\Store_Protheus\server\rel\F000053.fr3');
+    FXCLIENTE.LoadFromFile('\Softlogus\server\rel\F000053.fr3');
     FXCLIENTE.ShowReport;
   end;
   if combo_relatorio.Text = 'CARTA DE COBRANÇA - 2a. Cobrança' then
@@ -221,7 +221,7 @@ CARTA DE COBRANÇA - Registro SPC/SERASA}
     QRCONTASRECEBER.OPEN;
 
     frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring := emitente_cidade + FormatDateTime('", "dddd", "d" de "mmmm" de "yyyy', date);
-    FXCLIENTE.LoadFromFile('\Store_Protheus\server\rel\f000054.fr3');
+    FXCLIENTE.LoadFromFile('\Softlogus\server\rel\f000054.fr3');
     FXCLIENTE.ShowReport;
   end;
   if combo_relatorio.Text = 'CARTA DE COBRANÇA - Registro SPC/SERASA' then
@@ -242,13 +242,13 @@ CARTA DE COBRANÇA - Registro SPC/SERASA}
     QRCONTASRECEBER.OPEN;
 
     frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring := emitente_cidade + FormatDateTime('", "dddd", "d" de "mmmm" de "yyyy', date);
-    FXCLIENTE.LoadFromFile('\Store_Protheus\server\rel\f000055.fr3');
+    FXCLIENTE.LoadFromFile('\Softlogus\server\rel\f000055.fr3');
     FXCLIENTE.ShowReport;
   end;
 
   if combo_relatorio.Text = 'RESUMO POR CLIENTE' then
   begin
-    FXCLIENTE.LoadFromFile('\Store_Protheus\server\rel\f000060.fr3');
+    FXCLIENTE.LoadFromFile('\Softlogus\server\rel\f000060.fr3');
     FXCLIENTE.ShowReport;
   end;
 
@@ -257,7 +257,7 @@ CARTA DE COBRANÇA - Registro SPC/SERASA}
     FRMMODULO.QRRELATORIO.EDIT;
     frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring := 'CLIENTES QUE NÃO COMPRAM A MAIS DE ' + FRMCLIENTE_FINANCEIRO.rdias_inativo.Text + ' DIA(S)';
 
-    FXCLIENTE.LoadFromFile('\Store_Protheus\server\rel\f000151.fr3');
+    FXCLIENTE.LoadFromFile('\Softlogus\server\rel\f000151.fr3');
     FXCLIENTE.ShowReport;
   end;
 
@@ -341,13 +341,13 @@ procedure Tfrmlista_cliente_financeiro.BitBtn1Click(Sender: TObject);
 begin
   if combo_relatorio.Text = 'RELAÇÃO SINTÉTICA' then
   begin
-    FXCLIENTE.LoadFromFile('\Store_Protheus\server\rel\F000056.fr3');
+    FXCLIENTE.LoadFromFile('\Softlogus\server\rel\F000056.fr3');
     FXCLIENTE.DesignReport;
   end;
 
   if combo_relatorio.Text = 'RELAÇÃO AGRUPADA POR CLIENTE' then
   begin
-    FXCLIENTE.LoadFromFile('\Store_Protheus\server\rel\F000057.fr3');
+    FXCLIENTE.LoadFromFile('\Softlogus\server\rel\F000057.fr3');
     FXCLIENTE.DesignReport;
   end;
 
@@ -356,23 +356,23 @@ begin
 
   if combo_relatorio.Text = 'CARTA DE COBRANÇA - 1a. Cobrança' then
   begin
-    FXCLIENTE.LoadFromFile('\Store_Protheus\server\rel\F000053.fr3');
+    FXCLIENTE.LoadFromFile('\Softlogus\server\rel\F000053.fr3');
     FXCLIENTE.DesignReport;
   end;
   if combo_relatorio.Text = 'CARTA DE COBRANÇA - 2a. Cobrança' then
   begin
-    FXCLIENTE.LoadFromFile('\Store_Protheus\server\rel\f000054.fr3');
+    FXCLIENTE.LoadFromFile('\Softlogus\server\rel\f000054.fr3');
     FXCLIENTE.DesignReport;
   end;
   if combo_relatorio.Text = 'CARTA DE COBRANÇA - Registro SPC/SERASA' then
   begin
-    FXCLIENTE.LoadFromFile('\Store_Protheus\server\rel\f000055.fr3');
+    FXCLIENTE.LoadFromFile('\Softlogus\server\rel\f000055.fr3');
     FXCLIENTE.DesignReport;
   end;
 
   if combo_relatorio.Text = 'RESUMO POR CLIENTE' then
   begin
-    FXCLIENTE.LoadFromFile('\Store_Protheus\server\rel\f000060.fr3');
+    FXCLIENTE.LoadFromFile('\Softlogus\server\rel\f000060.fr3');
     FXCLIENTE.DESIGNREPORT;
   end;
 end;

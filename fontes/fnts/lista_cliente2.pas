@@ -297,7 +297,7 @@ begin
     qrcliente.open;
     frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring :=
       'RELAÇÃO DE CLIENTES';
-    fxcliente.LoadFromFile('\Store_Protheus\server\rel\f000001.fr3');
+    fxcliente.LoadFromFile('\Softlogus\server\rel\f000001.fr3');
     fxcliente.ShowReport;
   end;
   if combo_relatorio.Text = 'FICHA CADASTRAL' then
@@ -313,7 +313,7 @@ begin
     qrcliente.open;
     frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring :=
       'FICHA CADASTRAL DE CLIENTES';
-    fxcliente.LoadFromFile('\Store_Protheus\server\rel\f000002.fr3');
+    fxcliente.LoadFromFile('\Softlogus\server\rel\f000002.fr3');
     fxcliente.ShowReport;
 
   end;
@@ -338,7 +338,7 @@ begin
     qrcliente.open;
     frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring :=
       'RELAÇÃO DE CLIENTES POR CIDADE';
-    fxcliente.LoadFromFile('\Store_Protheus\server\rel\f000003.fr3');
+    fxcliente.LoadFromFile('\Softlogus\server\rel\f000003.fr3');
     fxcliente.ShowReport;
     qrcliente.MasterSource := nil;
     qrcliente.MasterFields := '';
@@ -364,7 +364,7 @@ begin
     qrcliente.open;
     frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring :=
       'RELAÇÃO DE CLIENTES POR REGIÃO';
-    fxcliente.LoadFromFile('\Store_Protheus\server\rel\f000004.fr3');
+    fxcliente.LoadFromFile('\Softlogus\server\rel\f000004.fr3');
     fxcliente.ShowReport;
     qrcliente.MasterSource := nil;
     qrcliente.MasterFields := '';
@@ -383,7 +383,7 @@ begin
       situacao + cliente + VENDEDOR + regiao + ' order by ' + combo_ordem.Text);
     qrcliente.open;
     frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring := 'ETIQUETAS';
-    fxcliente.LoadFromFile('\Store_Protheus\server\rel\f000006.fr3');
+    fxcliente.LoadFromFile('\Softlogus\server\rel\f000006.fr3');
     fxcliente.ShowReport;
   end;
 
@@ -416,7 +416,7 @@ begin
 
     qrcliente.open;
     frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring := 'ANIVERSARIANTES';
-    fxcliente.LoadFromFile('\Store_Protheus\server\rel\f000005.fr3');
+    fxcliente.LoadFromFile('\Softlogus\server\rel\f000005.fr3');
     fxcliente.ShowReport;
   end;
 
@@ -449,7 +449,7 @@ begin
 
     qrcliente.open;
     frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring := 'ANIVERSARIANTES';
-    fxcliente.LoadFromFile('\Store_Protheus\server\rel\f000006.fr3');
+    fxcliente.LoadFromFile('\Softlogus\server\rel\f000006.fr3');
     fxcliente.ShowReport;
   end;
 
@@ -541,41 +541,41 @@ begin
 
   if combo_relatorio.Text = 'RELAÇÃO' then
   begin
-    fxcliente.LoadFromFile('\Store_Protheus\server\rel\f000001.fr3');
+    fxcliente.LoadFromFile('\Softlogus\server\rel\f000001.fr3');
     fxcliente.DesignReport;
   end;
   if combo_relatorio.Text = 'FICHA CADASTRAL' then
   begin
-    fxcliente.LoadFromFile('\Store_Protheus\server\rel\f000002.fr3');
+    fxcliente.LoadFromFile('\Softlogus\server\rel\f000002.fr3');
     fxcliente.DesignReport;
   end;
 
   if combo_relatorio.Text = 'RELAÇÃO AGRUPADA POR CIDADE' then
   begin
-    fxcliente.LoadFromFile('\Store_Protheus\server\rel\f000003.fr3');
+    fxcliente.LoadFromFile('\Softlogus\server\rel\f000003.fr3');
     fxcliente.DesignReport;
   end;
   if combo_relatorio.Text = 'RELAÇÃO AGRUPADA POR REGIÃO' then
   begin
-    fxcliente.LoadFromFile('\Store_Protheus\server\rel\f000004.fr3');
+    fxcliente.LoadFromFile('\Softlogus\server\rel\f000004.fr3');
     fxcliente.DesignReport;
   end;
 
   if combo_relatorio.Text = 'ETIQUETAS' then
   begin
-    fxcliente.LoadFromFile('\Store_Protheus\server\rel\f000006.fr3');
+    fxcliente.LoadFromFile('\Softlogus\server\rel\f000006.fr3');
     fxcliente.DesignReport;
   end;
 
   if combo_relatorio.Text = 'ANIVERSARIANTES - RELAÇÃO' then
   begin
-    fxcliente.LoadFromFile('\Store_Protheus\server\rel\f000005.fr3');
+    fxcliente.LoadFromFile('\Softlogus\server\rel\f000005.fr3');
     fxcliente.DesignReport;
   end;
 
   if combo_relatorio.Text = 'ANIVERSARIANTES - ETIQUETAS' then
   begin
-    fxcliente.LoadFromFile('\Store_Protheus\server\rel\f000006.fr3');
+    fxcliente.LoadFromFile('\Softlogus\server\rel\f000006.fr3');
     fxcliente.DesignReport;
   end;
 end;

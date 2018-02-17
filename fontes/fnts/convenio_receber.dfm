@@ -1881,7 +1881,7 @@ object frmconvenio_receber: Tfrmconvenio_receber
     object Label53: TLabel
       Left = 59
       Top = 14
-      Width = 286
+      Width = 287
       Height = 23
       Caption = 'CONTAS RECEBER | Conv'#234'nio'
       Font.Charset = ANSI_CHARSET

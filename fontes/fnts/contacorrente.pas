@@ -738,7 +738,7 @@ begin
 
   frmmodulo.qrrelatorio.post;
 
-  fxcontacorrente.LoadFromFile('\Store_Protheus\server\rel\f000152.fr3');
+  fxcontacorrente.LoadFromFile('\Softlogus\server\rel\f000152.fr3');
   fxcontacorrente.ShowReport;
 end;
 

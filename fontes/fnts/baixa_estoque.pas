@@ -539,7 +539,7 @@ begin
     // salvar arquivo txt
     for I := 0 to ListBox1.count - 1 do
     begin
-      NomeDoLog := 'C:\Store_Protheus\SERVER\Logs\TRANSFERENCIA_PRODUTOS' +
+      NomeDoLog := 'C:\Softlogus\SERVER\Logs\TRANSFERENCIA_PRODUTOS' +
         DBEdit1.Text + '.txt';
       AssignFile(Arquivo, NomeDoLog);
       if FileExists(NomeDoLog) then
@@ -687,12 +687,12 @@ begin
   frmmodulo.qrrelatorio.Post;
   if wwdbComboBox1.ITEMINDEX = 4 then
   begin
-    fxorcamento.LoadFromFile('\Store_Protheus\server\rel\f000069_FILIAL.fr3');
+    fxorcamento.LoadFromFile('\Softlogus\server\rel\f000069_FILIAL.fr3');
     fxorcamento.ShowReport;
   end
   else
   begin
-    fxorcamento.LoadFromFile('\Store_Protheus\server\rel\f000069_2.fr3');
+    fxorcamento.LoadFromFile('\Softlogus\server\rel\f000069_2.fr3');
     fxorcamento.ShowReport;
   end;
 

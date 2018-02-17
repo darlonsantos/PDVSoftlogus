@@ -121,8 +121,8 @@ begin
   qrfrete.Params.parambyname('dataf').asdatetime := dateedit2.date;
   qrfrete.open;
 
-  if combo_relatorio.ItemIndex = 0 then FXNOTA.LoadFromFile('\Store_Protheus\server\rel\f000190.fr3');
-  if combo_relatorio.ItemIndex = 1 then FXNOTA.LoadFromFile('\Store_Protheus\server\rel\f000190_2.fr3');
+  if combo_relatorio.ItemIndex = 0 then FXNOTA.LoadFromFile('\Softlogus\server\rel\f000190.fr3');
+  if combo_relatorio.ItemIndex = 1 then FXNOTA.LoadFromFile('\Softlogus\server\rel\f000190_2.fr3');
 
   FXNOTA.ShowReport;
   frmPrincipal.logUC('Abriu Relatorio CTe / Frtes - ' +frmPrincipal.RemoveAcentos(combo_relatorio.Text), 0);
@@ -140,12 +140,12 @@ begin
 
   if combo_relatorio.itemindex = 0 then
   begin
-    FXNOTA.LoadFromFile('\Store_Protheus\server\rel\f000190.fr3');
+    FXNOTA.LoadFromFile('\Softlogus\server\rel\f000190.fr3');
     FXNOTA.DesignReport;
   end;
   if combo_relatorio.itemindex = 1 then
   begin
-    FXNOTA.LoadFromFile('\Store_Protheus\server\rel\f000190_2.fr3');
+    FXNOTA.LoadFromFile('\Softlogus\server\rel\f000190_2.fr3');
     FXNOTA.DesignReport;
   end;
 

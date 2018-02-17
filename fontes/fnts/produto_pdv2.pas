@@ -519,7 +519,7 @@ begin
 
         except
           textox := PWideChar('Não foi possível se conectar o banco de dados: ' + #13 +
-            qrpdv.fieldbyname('hostname').asstring + ':c:\Store_Protheus\bd\base.fdb' + #13 +
+            qrpdv.fieldbyname('hostname').asstring + ':c:\Softlogus\bd\base.fdb' + #13 +
             'Verifique o caminho e tente outra vez!');
           application.MessageBox(PWideChar(textox), 'Erro', mb_ok + mb_iconerror);
         end;
@@ -782,7 +782,7 @@ begin
   DecodeDate(DATE, ANO, MES, DIA);
   DecodeTime(TIME, HORA, MINUTO, SEGUNDO, MS);
 
-  AssignFile(TXT, 'c:\Store_Protheus\server\CG' + IntToStr(ANO) + IntToStr(MES) + IntToStr(DIA) + '_' + IntToStr(HORA) + IntToStr(MINUTO) + IntToStr(SEGUNDO) + '.001');
+  AssignFile(TXT, 'c:\Softlogus\server\CG' + IntToStr(ANO) + IntToStr(MES) + IntToStr(DIA) + '_' + IntToStr(HORA) + IntToStr(MINUTO) + IntToStr(SEGUNDO) + '.001');
 
   REWRITE(TXT);
 
@@ -924,7 +924,7 @@ begin
   closefile(txt);
 
   bar.Percent := 0;
-  origem := 'c:\Store_Protheus\server\CG' + IntToStr(ANO) + IntToStr(MES) + IntToStr(DIA) + '_' + IntToStr(HORA) + IntToStr(MINUTO) + IntToStr(SEGUNDO);
+  origem := 'c:\Softlogus\server\CG' + IntToStr(ANO) + IntToStr(MES) + IntToStr(DIA) + '_' + IntToStr(HORA) + IntToStr(MINUTO) + IntToStr(SEGUNDO);
 
   QRPDV.FIRST;
   while not QRPDV.EOF do begin

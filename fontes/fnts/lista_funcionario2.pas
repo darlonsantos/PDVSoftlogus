@@ -132,7 +132,7 @@ begin
     qrFUNCIONARIO.sql.add('select * from c000008 where NOME IS NOT NULL ' + FUNCIONARIO + ' order by ' + COMBO_ORDEM.TEXT);
     qrFUNCIONARIO.open;
     frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring := 'RELAÇÃO DE FUNCIONÁRIOS';
-    FXFUNCIONARIO.LoadFromFile('\Store_Protheus\server\rel\f000007.fr3');
+    FXFUNCIONARIO.LoadFromFile('\Softlogus\server\rel\f000007.fr3');
     FXFUNCIONARIO.ShowReport;
   end;
   if combo_relatorio.Text = 'FICHA CADASTRAL' then
@@ -142,7 +142,7 @@ begin
     qrFUNCIONARIO.sql.add('select * from c000008 where NOME IS NOT NULL ' + FUNCIONARIO + ' order by ' + COMBO_ORDEM.TEXT);
     qrFUNCIONARIO.open;
     frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring := 'FICHA CADASTRAL DE FUNCIONÁRIOS';
-    FXFUNCIONARIO.LoadFromFile('\Store_Protheus\server\rel\f000008.fr3');
+    FXFUNCIONARIO.LoadFromFile('\Softlogus\server\rel\f000008.fr3');
     FXFUNCIONARIO.ShowReport;
   end;
 
@@ -178,12 +178,12 @@ begin
 
   if combo_relatorio.Text = 'RELAÇÃO' then
   begin
-    FXFUNCIONARIO.LoadFromFile('\Store_Protheus\server\rel\f000007.fr3');
+    FXFUNCIONARIO.LoadFromFile('\Softlogus\server\rel\f000007.fr3');
     FXFUNCIONARIO.DesignReport;
   end;
   if combo_relatorio.Text = 'FICHA CADASTRAL' then
   begin
-    FXFUNCIONARIO.LoadFromFile('\Store_Protheus\server\rel\f000008.fr3');
+    FXFUNCIONARIO.LoadFromFile('\Softlogus\server\rel\f000008.fr3');
     FXFUNCIONARIO.DesignReport;
   end;
 

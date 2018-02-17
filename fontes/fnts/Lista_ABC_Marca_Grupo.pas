@@ -243,7 +243,7 @@ begin
   frmmodulo.qrrelatorio.FIELDBYNAME('LINHA1').ASSTRING :=
     'PERCENTUAL SOBRE VENDA (MARCA/GRUPO)';
 
-  relABC.LoadFromFile('\Store_Protheus\server\rel\f000195.fr3');
+  relABC.LoadFromFile('\Softlogus\server\rel\f000195.fr3');
   relABC.ShowReport;
   frmPrincipal.logUC('Abriu Relatorio Lista/ABC/Marca/Grupo', 0);
 end;
@@ -289,7 +289,7 @@ end;
 
 procedure TfrmLista_ABC_Marca_Grupo.bitbtn1Click(Sender: TObject);
 begin
-  relABC.LoadFromFile('\Store_Protheus\server\rel\f000195.fr3');
+  relABC.LoadFromFile('\Softlogus\server\rel\f000195.fr3');
   relABC.designreport;
 end;
 

@@ -168,12 +168,12 @@ begin
 
   if pagina_principal.ActivePageIndex = 0 then
   begin
-    fXproduto.LoadFromFile('\Store_Protheus\server\rel\f000205.fr3');
+    fXproduto.LoadFromFile('\Softlogus\server\rel\f000205.fr3');
     fxproduto.ShowReport;
   end;
   if pagina_principal.ActivePageIndex = 1 then
   begin
-    fXproduto.LoadFromFile('\Store_Protheus\server\rel\f000206.fr3');
+    fXproduto.LoadFromFile('\Softlogus\server\rel\f000206.fr3');
     fxproduto.ShowReport;
   end;
 
@@ -183,12 +183,12 @@ procedure Tfrmproduto_validade.bitbtn1Click(Sender: TObject);
 begin
   if pagina_principal.ActivePageIndex = 0 then
   begin
-    fXproduto.LoadFromFile('\Store_Protheus\server\rel\f000205.fr3');
+    fXproduto.LoadFromFile('\Softlogus\server\rel\f000205.fr3');
     fxproduto.designreport;
   end;
   if pagina_principal.ActivePageIndex = 1 then
   begin
-    fXproduto.LoadFromFile('\Store_Protheus\server\rel\f000206.fr3');
+    fXproduto.LoadFromFile('\Softlogus\server\rel\f000206.fr3');
     fxproduto.designreport;
   end;
 end;

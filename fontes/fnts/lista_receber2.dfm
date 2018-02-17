@@ -637,7 +637,7 @@ object frmlista_receber2: Tfrmlista_receber2
     object Label53: TLabel
       Left = 59
       Top = 14
-      Width = 313
+      Width = 314
       Height = 23
       Caption = 'CONTAS A RECEBER | Relat'#243'rios'
       Font.Charset = ANSI_CHARSET

@@ -303,14 +303,14 @@ begin
 
 
     frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring := 'FOLHA DE CAIXA';
-    fxcAIXA.LoadFromFile('\Store_Protheus\server\rel\f000071.fr3');
+    fxcAIXA.LoadFromFile('\Softlogus\server\rel\f000071.fr3');
     fxcAIXA.ShowReport;
   end;
 
   if combo_relatorio.Text = 'RESUMO DA FOLHA DO CAIXA' then
   begin
     frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring := 'RESUMO DA FOLHA DE CAIXA';
-    fxcAIXA.LoadFromFile('\Store_Protheus\server\rel\f000071_1.fr3');
+    fxcAIXA.LoadFromFile('\Softlogus\server\rel\f000071_1.fr3');
     fxcAIXA.ShowReport;
   end;
 
@@ -328,7 +328,7 @@ begin
     qrcaixa.open;
 
     frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring := 'RESUMO DE SAÍDAS';
-    fxcAIXA.LoadFromFile('\Store_Protheus\server\rel\f000072.fr3');
+    fxcAIXA.LoadFromFile('\Softlogus\server\rel\f000072.fr3');
     fxcAIXA.ShowReport;
   end;
 
@@ -348,7 +348,7 @@ begin
     qrcaixa.open;
 
     frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring := 'RESUMO DE RECEBIMENTOS';
-    fxcAIXA.LoadFromFile('\Store_Protheus\server\rel\f000073.fr3');
+    fxcAIXA.LoadFromFile('\Softlogus\server\rel\f000073.fr3');
     fxcAIXA.ShowReport;
   end;
 
@@ -372,7 +372,7 @@ begin
 
   if combo_relatorio.Text = 'FOLHA DE CAIXA' then
   begin
-    fxcAIXA.LoadFromFile('\Store_Protheus\server\rel\f000071.fr3');
+    fxcAIXA.LoadFromFile('\Softlogus\server\rel\f000071.fr3');
     fxcAIXA.designreport;
   end;
 

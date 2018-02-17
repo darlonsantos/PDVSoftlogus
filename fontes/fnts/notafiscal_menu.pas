@@ -3681,7 +3681,7 @@ begin
         exit;
       end;
       // verificar se pdf existe
-    pdf:= 'C:\Store_Protheus\SERVER\PDF\'+ stringreplace( ExtractFileName(sXML), '-NFe.xml' , '.pdf',[rfReplaceAll, rfIgnoreCase]);
+    pdf:= 'C:\Softlogus\SERVER\PDF\'+ stringreplace( ExtractFileName(sXML), '-NFe.xml' , '.pdf',[rfReplaceAll, rfIgnoreCase]);
      if FileExists(pdf) then sXML := sXML + '|'+ pdf;
 
       qrNFE_Cliente.close;

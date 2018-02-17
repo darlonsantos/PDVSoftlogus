@@ -126,7 +126,7 @@ begin
     qrtransportador.sql.add('select * from c000010 where NOME IS NOT NULL ' + transportador + ' order by ' + COMBO_ORDEM.TEXT);
     qrtransportador.open;
     frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring := 'RELAÇÃO DE TRANSPORTADORES';
-    FXtransportador.LoadFromFile('\Store_Protheus\server\rel\f000011.fr3');
+    FXtransportador.LoadFromFile('\Softlogus\server\rel\f000011.fr3');
     FXtransportador.ShowReport;
   end;
   if combo_relatorio.Text = 'FICHA CADASTRAL' then
@@ -136,7 +136,7 @@ begin
     qrtransportador.sql.add('select * from c000010 where NOME IS NOT NULL ' + transportador + ' order by ' + COMBO_ORDEM.TEXT);
     qrtransportador.open;
     frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring := 'FICHA CADASTRAL DE TRANSPORTADORES';
-    FXtransportador.LoadFromFile('\Store_Protheus\server\rel\f000012.fr3');
+    FXtransportador.LoadFromFile('\Softlogus\server\rel\f000012.fr3');
     FXtransportador.ShowReport;
   end;
 
@@ -172,12 +172,12 @@ begin
 
   if combo_relatorio.Text = 'RELAÇÃO' then
   begin
-    FXtransportador.LoadFromFile('\Store_Protheus\server\rel\f000011.fr3');
+    FXtransportador.LoadFromFile('\Softlogus\server\rel\f000011.fr3');
     FXtransportador.DesignReport;
   end;
   if combo_relatorio.Text = 'FICHA CADASTRAL' then
   begin
-    FXtransportador.LoadFromFile('\Store_Protheus\server\rel\f000012.fr3');
+    FXtransportador.LoadFromFile('\Softlogus\server\rel\f000012.fr3');
     FXtransportador.DesignReport;
   end;
 

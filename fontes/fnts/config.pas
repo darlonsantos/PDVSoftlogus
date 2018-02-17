@@ -779,7 +779,7 @@ procedure Tfrmconfig.BitBtn12Click(Sender: TObject);
 begin
 {  if DBComboBox3.text = 'DARUMA' then
   begin
-     executeFile('\Store_Protheus\server\ecf\daruma\Exemplo\Delphi\Daruma_Framework_Delphi7.exe', '', '',1)
+     executeFile('\Softlogus\server\ecf\daruma\Exemplo\Delphi\Daruma_Framework_Delphi7.exe', '', '',1)
   end; }
 end;
 

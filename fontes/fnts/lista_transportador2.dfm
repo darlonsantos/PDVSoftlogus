@@ -419,7 +419,7 @@ object frmlista_transportador2: Tfrmlista_transportador2
     object Label53: TLabel
       Left = 59
       Top = 14
-      Width = 277
+      Width = 279
       Height = 23
       Caption = 'Relat'#243'rio de Transportadores'
       Font.Charset = ANSI_CHARSET

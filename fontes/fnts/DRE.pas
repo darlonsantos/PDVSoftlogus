@@ -122,7 +122,7 @@ begin
   frmmodulo.qrrelatorio.FIELDBYNAME('LINHA2').ASSTRING := 'PERÍODO: ' +
     DateEdit1.TEXT + ' A ' + DateEdit2.TEXT;
 
-  relDRE.LoadFromFile('\Store_Protheus\server\rel\f000201.fr3');
+  relDRE.LoadFromFile('\Softlogus\server\rel\f000201.fr3');
   relDRE.ShowReport;
 
   frmPrincipal.logUC('Abriu Relatorio DRE', 0);
@@ -145,7 +145,7 @@ end;
 
 procedure TfrmDRE.bitbtn1Click(Sender: TObject);
 begin
-  relDRE.LoadFromFile('\Store_Protheus\server\rel\f000201.fr3');
+  relDRE.LoadFromFile('\Softlogus\server\rel\f000201.fr3');
   relDRE.DesignReport;
 end;
 

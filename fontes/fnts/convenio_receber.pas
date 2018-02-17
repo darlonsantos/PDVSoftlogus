@@ -801,7 +801,7 @@ begin
   // QRPRODUTO3.IndexFieldNames :=  'DATA';
   qrproduto3.Refresh;
 
-  fxconvenio.LoadFromFile('\Store_Protheus\server\rel\f000087.fr3');
+  fxconvenio.LoadFromFile('\Softlogus\server\rel\f000087.fr3');
   //fxconvenio.designreport;
   fxCONVENIO.ShowReport;
 
@@ -856,7 +856,7 @@ begin
     'Data Base do Fechamento: ' + edata.text;
   frmmodulo.QRRELATORIO.FieldByName('LINHA3').AsString := locconvenio.text;
 
-  fxconvenio.LoadFromFile('\Store_Protheus\server\rel\f000136.fr3');
+  fxconvenio.LoadFromFile('\Softlogus\server\rel\f000136.fr3');
   // fxconvenio.designreport;
   fxconvenio.ShowReport;
 

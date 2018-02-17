@@ -580,7 +580,7 @@ begin
 
   frmmodulo.qrrelatorio.post;
 
-  fxrecibo.LoadFromFile('c:\Store_Protheus\server\rel\f000078.fr3');
+  fxrecibo.LoadFromFile('c:\Softlogus\server\rel\f000078.fr3');
   fxrecibo.ShowReport;
 
 end;

@@ -324,7 +324,7 @@ object frmproduto_pedido: Tfrmproduto_pedido
         object Label7: TLabel
           Left = 2
           Top = 11
-          Width = 133
+          Width = 24
           Height = 23
           Align = alBottom
           Alignment = taCenter
@@ -335,7 +335,6 @@ object frmproduto_pedido: Tfrmproduto_pedido
           Font.Name = 'Tahoma'
           Font.Style = [fsBold]
           ParentFont = False
-          ExplicitWidth = 24
         end
       end
     end

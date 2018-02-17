@@ -523,7 +523,7 @@ begin
   qrentrega.Filtered := true;
 
 
-  rel_entrega.Report.LoadFromFile('\Store_Protheus\server\rel\F000048_2.fr3');
+  rel_entrega.Report.LoadFromFile('\Softlogus\server\rel\F000048_2.fr3');
 //  rel_entrega.Report.LoadFromFile('c:\tempo.fr3');
   rel_entrega.ShowReport;
 

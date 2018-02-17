@@ -2091,7 +2091,7 @@ object frmlista_produto2: Tfrmlista_produto2
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 39181.615094942100000000
-    ReportOptions.LastChange = 41621.656332268500000000
+    ReportOptions.LastChange = 41621.656332268510000000
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
       ''
@@ -2102,6 +2102,7 @@ object frmlista_produto2: Tfrmlista_produto2
     Top = 334
     Datasets = <
       item
+        DataSet = frmlista_venda2.fscontas_receber
         DataSetName = 'fscontas_receber'
       end
       item
@@ -2337,12 +2338,14 @@ object frmlista_produto2: Tfrmlista_produto2
         Height = 18.897650000000000000
         Top = 192.756030000000000000
         Width = 740.409927000000000000
+        DataSet = frmlista_venda2.fscontas_receber
         DataSetName = 'fscontas_receber'
         RowCount = 0
         object Memo3: TfrxMemoView
           Width = 49.133890000000000000
           Height = 11.338590000000000000
           DataField = 'DATA_VENCIMENTO'
+          DataSet = frmlista_venda2.fscontas_receber
           DataSetName = 'fscontas_receber'
           DisplayFormat.DecimalSeparator = ','
           Font.Charset = DEFAULT_CHARSET
@@ -2359,6 +2362,7 @@ object frmlista_produto2: Tfrmlista_produto2
           Width = 49.133890000000000000
           Height = 11.338590000000000000
           DataField = 'CODIGO'
+          DataSet = frmlista_venda2.fscontas_receber
           DataSetName = 'fscontas_receber'
           DisplayFormat.DecimalSeparator = ','
           Font.Charset = DEFAULT_CHARSET
@@ -2374,6 +2378,7 @@ object frmlista_produto2: Tfrmlista_produto2
           Left = 52.913420000000000000
           Width = 166.299320000000000000
           Height = 11.338590000000000000
+          DataSet = frmlista_venda2.fscontas_receber
           DataSetName = 'fscontas_receber'
           DisplayFormat.DecimalSeparator = ','
           Font.Charset = DEFAULT_CHARSET
@@ -2390,6 +2395,7 @@ object frmlista_produto2: Tfrmlista_produto2
           Width = 71.811070000000000000
           Height = 11.338590000000000000
           DataField = 'DOCUMENTO'
+          DataSet = frmlista_venda2.fscontas_receber
           DataSetName = 'fscontas_receber'
           DisplayFormat.DecimalSeparator = ','
           Font.Charset = DEFAULT_CHARSET
@@ -2406,6 +2412,7 @@ object frmlista_produto2: Tfrmlista_produto2
           Width = 60.472480000000000000
           Height = 11.338590000000000000
           DataField = 'VALOR_ORIGINAL'
+          DataSet = frmlista_venda2.fscontas_receber
           DataSetName = 'fscontas_receber'
           DisplayFormat.DecimalSeparator = ','
           DisplayFormat.FormatStr = '###,###,##0.00'
@@ -2425,6 +2432,7 @@ object frmlista_produto2: Tfrmlista_produto2
           Width = 64.252010000000000000
           Height = 11.338590000000000000
           DataField = 'VALOR_PAGO'
+          DataSet = frmlista_venda2.fscontas_receber
           DataSetName = 'fscontas_receber'
           DisplayFormat.DecimalSeparator = ','
           DisplayFormat.FormatStr = '###,###,##0.00'
@@ -2444,6 +2452,7 @@ object frmlista_produto2: Tfrmlista_produto2
           Width = 56.692950000000000000
           Height = 11.338590000000000000
           DataField = 'DATA_PAGAMENTO'
+          DataSet = frmlista_venda2.fscontas_receber
           DataSetName = 'fscontas_receber'
           DisplayFormat.DecimalSeparator = ','
           Font.Charset = DEFAULT_CHARSET
@@ -2460,6 +2469,7 @@ object frmlista_produto2: Tfrmlista_produto2
           Width = 60.472480000000000000
           Height = 11.338590000000000000
           DataField = 'VALOR_ATUAL'
+          DataSet = frmlista_venda2.fscontas_receber
           DataSetName = 'fscontas_receber'
           DisplayFormat.DecimalSeparator = ','
           DisplayFormat.FormatStr = '###,###,##0.00'
@@ -2480,6 +2490,7 @@ object frmlista_produto2: Tfrmlista_produto2
           Width = 26.456710000000000000
           Height = 11.338590000000000000
           DataField = 'DIAS'
+          DataSet = frmlista_venda2.fscontas_receber
           DataSetName = 'fscontas_receber'
           DisplayFormat.DecimalSeparator = ','
           Font.Charset = DEFAULT_CHARSET
@@ -2498,6 +2509,7 @@ object frmlista_produto2: Tfrmlista_produto2
           Width = 37.795300000000000000
           Height = 11.338590000000000000
           DataField = 'juros'
+          DataSet = frmlista_venda2.fscontas_receber
           DataSetName = 'fscontas_receber'
           DisplayFormat.DecimalSeparator = ','
           DisplayFormat.FormatStr = '###,###,##0.00'
@@ -2518,6 +2530,7 @@ object frmlista_produto2: Tfrmlista_produto2
           Width = 60.472480000000000000
           Height = 11.338590000000000000
           DataField = 'RESTANTE'
+          DataSet = frmlista_venda2.fscontas_receber
           DataSetName = 'fscontas_receber'
           DisplayFormat.DecimalSeparator = ','
           DisplayFormat.FormatStr = '###,###,##0.00'
@@ -2564,6 +2577,7 @@ object frmlista_produto2: Tfrmlista_produto2
           Top = 3.779529999999990000
           Width = 60.472480000000000000
           Height = 11.338590000000000000
+          DataSet = frmlista_venda2.fscontas_receber
           DataSetName = 'fscontas_receber'
           DisplayFormat.DecimalSeparator = ','
           DisplayFormat.FormatStr = '###,###,##0.00'
@@ -2583,6 +2597,7 @@ object frmlista_produto2: Tfrmlista_produto2
           Top = 3.779529999999990000
           Width = 64.252010000000000000
           Height = 11.338590000000000000
+          DataSet = frmlista_venda2.fscontas_receber
           DataSetName = 'fscontas_receber'
           DisplayFormat.DecimalSeparator = ','
           DisplayFormat.FormatStr = '###,###,##0.00'
@@ -2602,6 +2617,7 @@ object frmlista_produto2: Tfrmlista_produto2
           Top = 3.779529999999990000
           Width = 60.472480000000000000
           Height = 11.338590000000000000
+          DataSet = frmlista_venda2.fscontas_receber
           DataSetName = 'fscontas_receber'
           DisplayFormat.DecimalSeparator = ','
           DisplayFormat.FormatStr = '###,###,##0.00'
@@ -2621,6 +2637,7 @@ object frmlista_produto2: Tfrmlista_produto2
           Top = 4.559059999999990000
           Width = 37.795300000000000000
           Height = 11.338590000000000000
+          DataSet = frmlista_venda2.fscontas_receber
           DataSetName = 'fscontas_receber'
           DisplayFormat.DecimalSeparator = ','
           DisplayFormat.FormatStr = '###,###,##0.00'
@@ -2640,6 +2657,7 @@ object frmlista_produto2: Tfrmlista_produto2
           Top = 4.559059999999990000
           Width = 60.472480000000000000
           Height = 11.338590000000000000
+          DataSet = frmlista_venda2.fscontas_receber
           DataSetName = 'fscontas_receber'
           DisplayFormat.DecimalSeparator = ','
           DisplayFormat.FormatStr = '###,###,##0.00'

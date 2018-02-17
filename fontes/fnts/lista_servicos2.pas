@@ -121,7 +121,7 @@ begin
     qrSERVICO.sql.add('select * from c000011 where CODIGO IS NOT NULL ' + GRUPO + ' order by ' + COMBO_ORDEM.TEXT);
     qrSERVICO.open;
     frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring := 'RELAÇÃO DE FUNCIONÁRIOS';
-    FXSERVICO.LoadFromFile('\Store_Protheus\server\rel\f000013.fr3');
+    FXSERVICO.LoadFromFile('\Softlogus\server\rel\f000013.fr3');
     FXSERVICO.ShowReport;
   end;
   if combo_relatorio.Text = 'RELAÇÃO POR GRUPO' then
@@ -141,7 +141,7 @@ begin
     qrservico.sql.add('select * from c000011 where codigo is not null ' + grupo + ' order by ' + COMBO_ORDEM.TEXT);
     qrservico.open;
     frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring := 'RELAÇÃO DE SERVIÇOS POR GRUPO';
-    FXSERVICO.LoadFromFile('\Store_Protheus\server\rel\f000014.fr3');
+    FXSERVICO.LoadFromFile('\Softlogus\server\rel\f000014.fr3');
     FXSERVICO.ShowReport;
     qrservico.MasterSource := nil;
     qrservico.MasterFields := '';
@@ -180,12 +180,12 @@ begin
 
   if combo_relatorio.Text = 'RELAÇÃO' then
   begin
-    FXSERVICO.LoadFromFile('\Store_Protheus\server\rel\f000013.fr3');
+    FXSERVICO.LoadFromFile('\Softlogus\server\rel\f000013.fr3');
     FXSERVICO.DesignReport;
   end;
   if combo_relatorio.Text = 'RELAÇÃO POR GRUPO' then
   begin
-    FXSERVICO.LoadFromFile('\Store_Protheus\server\rel\f000014.fr3');
+    FXSERVICO.LoadFromFile('\Softlogus\server\rel\f000014.fr3');
     FXSERVICO.DesignReport;
   end;
 

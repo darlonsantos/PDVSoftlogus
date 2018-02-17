@@ -468,7 +468,7 @@ object frmLista_ABC_Marca_Grupo: TfrmLista_ABC_Marca_Grupo
     object Label53: TLabel
       Left = 59
       Top = 13
-      Width = 347
+      Width = 348
       Height = 23
       Caption = 'Relat'#243'rio de Percentual sobre Venda'
       Font.Charset = ANSI_CHARSET

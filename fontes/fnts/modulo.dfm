@@ -10,11 +10,10 @@ object frmmodulo: Tfrmmodulo
       'controls_cp=CP_UTF16')
     ReadOnly = True
     TransactIsolationLevel = tiReadCommitted
-    Connected = True
     SQLHourGlass = True
     HostName = ''
     Port = 0
-    Database = 'C:\Store_Protheus\Server\BD\BASE.FDB'
+    Database = 'C:\Softlogus\Server\BD\BASE.FDB'
     User = 'SYSDBA'
     Password = 'masterkey'
     Protocol = 'firebird-2.5'
@@ -52,7 +51,6 @@ object frmmodulo: Tfrmmodulo
   end
   object qrUsuario: TZQuery
     Connection = Conexao
-    Active = True
     SQL.Strings = (
       'select * from c000003')
     Params = <>
@@ -942,7 +940,6 @@ object frmmodulo: Tfrmmodulo
   end
   object qrFilial: TZQuery
     Connection = Conexao
-    Active = True
     SQL.Strings = (
       'select * from c000004')
     Params = <>
@@ -1302,7 +1299,6 @@ object frmmodulo: Tfrmmodulo
   object qrcliente: TZQuery
     Connection = Conexao
     BeforePost = qrclienteBeforePost
-    Active = True
     SQL.Strings = (
       'select * from c000007')
     Params = <>
@@ -1760,7 +1756,6 @@ object frmmodulo: Tfrmmodulo
   end
   object qrregiao: TZQuery
     Connection = Conexao
-    Active = True
     SQL.Strings = (
       'select * from c000005')
     Params = <>
@@ -1782,7 +1777,6 @@ object frmmodulo: Tfrmmodulo
   end
   object qrfunci: TZQuery
     Connection = Conexao
-    Active = True
     SQL.Strings = (
       'select * from c000008')
     Params = <>
@@ -2834,7 +2828,6 @@ object frmmodulo: Tfrmmodulo
   end
   object qraliquota: TZQuery
     Connection = Conexao
-    Active = True
     SQL.Strings = (
       'select * from c000023')
     Params = <>
@@ -4264,7 +4257,6 @@ object frmmodulo: Tfrmmodulo
   end
   object qrCFOP: TZQuery
     Connection = Conexao
-    Active = True
     SQL.Strings = (
       'select * from c000030')
     Params = <>
@@ -5354,11 +5346,10 @@ object frmmodulo: Tfrmmodulo
     AutoCommit = False
     ReadOnly = True
     TransactIsolationLevel = tiReadCommitted
-    Connected = True
     SQLHourGlass = True
     HostName = ''
     Port = 0
-    Database = 'C:\Store_Protheus\Server\BD\BASE.FDB'
+    Database = 'C:\Softlogus\Server\BD\BASE.FDB'
     User = 'SYSDBA'
     Password = 'masterkey'
     Protocol = 'firebird-2.5'
@@ -9259,7 +9250,6 @@ object frmmodulo: Tfrmmodulo
   end
   object qrconvenio: TZQuery
     Connection = Conexao
-    Active = True
     SQL.Strings = (
       'select * from c000071')
     Params = <>
@@ -9419,7 +9409,7 @@ object frmmodulo: Tfrmmodulo
     SQLHourGlass = True
     HostName = ''
     Port = 0
-    Database = 'C:\Store_Protheus\Server\BD\BASE.FDB'
+    Database = 'C:\Softlogus\Server\BD\BASE.FDB'
     User = 'SYSDBA'
     Password = 'masterkey'
     Protocol = 'firebird-2.5'
@@ -9431,7 +9421,6 @@ object frmmodulo: Tfrmmodulo
     BeforePost = qrfiscal_cstBeforePost
     AfterPost = qrfiscal_cstAfterPost
     AfterDelete = qrfiscal_cstAfterDelete
-    Active = True
     SQL.Strings = (
       'select * from c000083')
     Params = <>
@@ -11254,11 +11243,10 @@ object frmmodulo: Tfrmmodulo
     AutoCommit = False
     ReadOnly = True
     TransactIsolationLevel = tiReadCommitted
-    Connected = True
     SQLHourGlass = True
     HostName = ''
     Port = 0
-    Database = 'C:\Store_Protheus\Server\BD\BASE.FDB'
+    Database = 'C:\Softlogus\Server\BD\BASE.FDB'
     User = 'SYSDBA'
     Password = 'masterkey'
     Protocol = 'firebirdd-2.5'
@@ -13681,11 +13669,10 @@ object frmmodulo: Tfrmmodulo
     Catalog = ''
     ReadOnly = True
     TransactIsolationLevel = tiReadCommitted
-    Connected = True
     SQLHourGlass = True
     HostName = ''
     Port = 0
-    Database = 'C:\Store_Protheus\Server\BD\BASE.FDB'
+    Database = 'C:\Softlogus\Server\BD\BASE.FDB'
     User = 'SYSDBA'
     Password = 'masterkey'
     Protocol = 'firebird-2.5'
@@ -14911,11 +14898,10 @@ object frmmodulo: Tfrmmodulo
     Catalog = ''
     ReadOnly = True
     TransactIsolationLevel = tiReadCommitted
-    Connected = True
     SQLHourGlass = True
     HostName = ''
     Port = 0
-    Database = 'C:\Store_Protheus\Server\BD\BASE.FDB'
+    Database = 'C:\Softlogus\Server\BD\BASE.FDB'
     User = 'SYSDBA'
     Password = 'masterkey'
     Protocol = 'firebird-2.5'
@@ -16735,7 +16721,6 @@ object frmmodulo: Tfrmmodulo
   end
   object qrCest: TZQuery
     Connection = Conexao
-    Active = True
     SQL.Strings = (
       'select * from CEST')
     Params = <>

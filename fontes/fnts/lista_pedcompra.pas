@@ -138,7 +138,7 @@ begin
       FRMMODULO.QRRELATORIO.FIELDBYNAME('LINHA7').ASSTRING := 'Cancelado';
 
 
-    FXNOTA.LoadFromFile('\Store_Protheus\server\rel\f000093.fr3');
+    FXNOTA.LoadFromFile('\Softlogus\server\rel\f000093.fr3');
     FXNOTA.ShowReport;
   end;
 
@@ -157,7 +157,7 @@ begin
 
   if combo_relatorio.itemindex = 0 then
   begin
-    FXNOTA.LoadFromFile('\Store_Protheus\server\rel\f000093.fr3');
+    FXNOTA.LoadFromFile('\Softlogus\server\rel\f000093.fr3');
     FXNOTA.DesignReport;
   end;
 

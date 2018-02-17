@@ -2102,7 +2102,7 @@ end;
 
 procedure Tfrmcontasreceber.BGRAVARbrelatoriosClick(Sender: TObject);
 begin
-  WinExec('C:\Store_Protheus\Server\Boleto.exe', SW_SHOW)
+  WinExec('C:\Softlogus\Server\Boleto.exe', SW_SHOW)
 end;
 
 procedure Tfrmcontasreceber.edit1ButtonClick(Sender: TObject);
@@ -2407,7 +2407,7 @@ begin
           Abort;
         end;
 
-      ACBrBoleto1.DirArqRemessa := DirRemessa; // C:\Store_Protheus\server\cob\remessa
+      ACBrBoleto1.DirArqRemessa := DirRemessa; // C:\Softlogus\server\cob\remessa
       ACBrBoleto1.NomeArqRemessa := '\E' + FormatDateTime('dd', DATE) +
         '0001.REM'; // \E050001.REM
       if frmmodulo.qrconfig_cobrebemREMESSA_LAYOUT.Value = 'FEBRABAN240' then
@@ -2560,7 +2560,7 @@ begin
       frmmodulo.qrconfig_cobrebemNOSSONUMERO_PROXIMO.asstring :=
         inttostr(nn + 1);
       // gravar nosso numero do contasreceber
-      ACBrBoletoFCFR1.NomeArquivo := 'C:\Store_Protheus\server\pdf\' +
+      ACBrBoletoFCFR1.NomeArquivo := 'C:\Softlogus\server\pdf\' +
         NossoNumero + '.pdf';
       ACBrBoletoFCFR1.Filtro := fiPDF;
       ACBrBoletoFCFR1.Imprimir;
@@ -2667,7 +2667,7 @@ begin
           inttostr(nn + 1);
 
         // gravar nosso numero do contasreceber
-        ACBrBoletoFCFR1.NomeArquivo := 'C:\Store_Protheus\server\pdf\' +
+        ACBrBoletoFCFR1.NomeArquivo := 'C:\Softlogus\server\pdf\' +
           NossoNumero + '.pdf';
         ACBrBoletoFCFR1.Filtro := fiPDF;
         // teste

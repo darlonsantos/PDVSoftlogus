@@ -45,7 +45,7 @@ object frmboleto_avulso: Tfrmboleto_avulso
     object Label5: TLabel
       Left = 8
       Top = 179
-      Width = 76
+      Width = 77
       Height = 13
       Caption = 'Total L'#237'quido:'
     end
@@ -364,7 +364,7 @@ object frmboleto_avulso: Tfrmboleto_avulso
       object Label1: TLabel
         Left = 8
         Top = 16
-        Width = 124
+        Width = 125
         Height = 13
         Caption = 'Valor das Presta'#231#245'es:'
       end
@@ -378,7 +378,7 @@ object frmboleto_avulso: Tfrmboleto_avulso
       object Label3: TLabel
         Left = 8
         Top = 64
-        Width = 97
+        Width = 98
         Height = 13
         Caption = 'Valor Atualizado:'
       end

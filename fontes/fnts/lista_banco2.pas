@@ -89,7 +89,7 @@ begin
     qrBANCO.sql.add('select * from c000035 order by ' + COMBO_ORDEM.TEXT);
     qrBANCO.open;
     frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring := 'RELAÇÃO DE BANCOS';
-    FXBANCO.LoadFromFile('\Store_Protheus\server\rel\f000015.fr3');
+    FXBANCO.LoadFromFile('\Softlogus\server\rel\f000015.fr3');
     FXBANCO.ShowReport;
   end;
 
@@ -108,7 +108,7 @@ begin
 
   if combo_relatorio.Text = 'RELAÇÃO' then
   begin
-    FXBANCO.LoadFromFile('\Store_Protheus\server\rel\f000015.fr3');
+    FXBANCO.LoadFromFile('\Softlogus\server\rel\f000015.fr3');
     FXBANCO.DesignReport;
   end;
 

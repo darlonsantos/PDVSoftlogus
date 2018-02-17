@@ -2115,9 +2115,9 @@ begin
             frmmodulo.qrrelatorio.FieldByName('linha6').asstring :=
               IntToStr(qrproduto_mov.RecordCount);
             frmmodulo.qrrelatorio.post;
-            fxvenda.LoadFromFile('c:\Store_Protheus\server\rel\f000074.fr3');
+            fxvenda.LoadFromFile('c:\Softlogus\server\rel\f000074.fr3');
             fxvenda.ShowReport;
-            fxvenda.LoadFromFile('c:\Store_Protheus\server\rel\f000153.fr3');
+            fxvenda.LoadFromFile('c:\Softlogus\server\rel\f000153.fr3');
             fxvenda.ShowReport;
 
           end
@@ -2129,7 +2129,7 @@ begin
             frmmodulo.qrrelatorio.FieldByName('linha6').asstring :=
               IntToStr(qrproduto_mov.RecordCount);
             frmmodulo.qrrelatorio.post;
-            fxvenda.LoadFromFile('c:\Store_Protheus\server\rel\f000050.fr3');
+            fxvenda.LoadFromFile('c:\Softlogus\server\rel\f000050.fr3');
             fxvenda.ShowReport;
           end;
         end;

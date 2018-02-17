@@ -168,7 +168,7 @@ begin
 
   FRMMODULO.QRRELATORIO.POST;
 
-  fxnotafiscal.LoadFromFile('\Store_Protheus\server\rel\f000061.fr3');
+  fxnotafiscal.LoadFromFile('\Softlogus\server\rel\f000061.fr3');
   fXnotafiscal.ShowReport;
 
 end;
@@ -188,7 +188,7 @@ begin
 
   if combo_modelo.ItemIndex = 0 then
   begin
-    fxnotafiscal.LoadFromFile('\Store_Protheus\server\rel\f000061.fr3');
+    fxnotafiscal.LoadFromFile('\Softlogus\server\rel\f000061.fr3');
     fXnotafiscal.designreport;
   end;
 end;

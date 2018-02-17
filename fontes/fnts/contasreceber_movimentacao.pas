@@ -502,7 +502,7 @@ begin
   FRMMODULO.QRRELATORIO.FieldByName('linha7').AsString := ''; // 'PERÍODO: '+dateedit1.text+' a '+dateedit2.text;
   frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring := 'EXTRATO SINTÉTICO DE DÉBITO DO CLIENTE';
 
-  fxvenda_produto.LoadFromFile('C:\Store_Protheus\Server\rel\F000131.fr3');
+  fxvenda_produto.LoadFromFile('C:\Softlogus\Server\rel\F000131.fr3');
   fxvenda_produto.ShowReport;
 
   // ordena por codigo de produto

@@ -753,7 +753,7 @@ begin
       Memo1.Lines[0];
 
       begin
-        AssignFile(arquivo, 'C:\Store_Protheus\server\Logs\ERROBARRAS' + ExtractFileName(OpenDialog1.FileName));
+        AssignFile(arquivo, 'C:\Softlogus\server\Logs\ERROBARRAS' + ExtractFileName(OpenDialog1.FileName));
         Rewrite(arquivo)
 
       end;
@@ -793,7 +793,7 @@ begin
       GroupBox2.caption := 'Código de Barras atualizados com Sucesso!';
       DeleteFile(edestino.Text);
       edestino.Text := '';
-      edestino.Text := 'C:\Store_Protheus\server\Logs\ERROBARRAS' + ExtractFileName(OpenDialog1.FileName);
+      edestino.Text := 'C:\Softlogus\server\Logs\ERROBARRAS' + ExtractFileName(OpenDialog1.FileName);
       CloseFile(arquivo);
       Memo1.Text := '';
       Memo1.Lines.LoadFromFile(edestino.text);

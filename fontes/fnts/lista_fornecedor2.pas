@@ -157,7 +157,7 @@ begin
     qrFORNECEDOR.sql.add('select * from c000009 where NOME IS NOT NULL ' + FORNECEDOR + ' order by ' + COMBO_ORDEM.TEXT);
     qrFORNECEDOR.open;
     frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring := 'RELAÇÃO DE FORNECEDORES';
-    FXFORNECEDOR.LoadFromFile('\Store_Protheus\server\rel\f000009.fr3');
+    FXFORNECEDOR.LoadFromFile('\Softlogus\server\rel\f000009.fr3');
     FXFORNECEDOR.ShowReport;
   end;
   if combo_relatorio.Text = 'FICHA CADASTRAL' then
@@ -167,7 +167,7 @@ begin
     qrFORNECEDOR.sql.add('select * from c000009 where NOME IS NOT NULL ' + FORNECEDOR + ' order by ' + COMBO_ORDEM.TEXT);
     qrFORNECEDOR.open;
     frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring := 'FICHA CADASTRAL DE FORNECEDORES';
-    FXFORNECEDOR.LoadFromFile('\Store_Protheus\server\rel\f000010.fr3');
+    FXFORNECEDOR.LoadFromFile('\Softlogus\server\rel\f000010.fr3');
     FXFORNECEDOR.ShowReport;
   end;
   frmPrincipal.logUC('Abriu Relatorio Fornecedor - ' + frmPrincipal.RemoveAcentos(combo_relatorio.Text), 0);
@@ -204,12 +204,12 @@ begin
 
   if combo_relatorio.Text = 'RELAÇÃO' then
   begin
-    FXFORNECEDOR.LoadFromFile('\Store_Protheus\server\rel\f000009.fr3');
+    FXFORNECEDOR.LoadFromFile('\Softlogus\server\rel\f000009.fr3');
     FXFORNECEDOR.DesignReport;
   end;
   if combo_relatorio.Text = 'FICHA CADASTRAL' then
   begin
-    FXFORNECEDOR.LoadFromFile('\Store_Protheus\server\rel\f000010.fr3');
+    FXFORNECEDOR.LoadFromFile('\Softlogus\server\rel\f000010.fr3');
     FXFORNECEDOR.DesignReport;
   end;
 

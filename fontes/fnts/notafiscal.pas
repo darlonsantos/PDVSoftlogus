@@ -4507,7 +4507,7 @@ begin
   end;
   qrduplicata.SortOnFields('duplicata_numero');
 
-  fxduplicata.LoadFromFile('\Store_Protheus\server\rel\f000150.fr3');
+  fxduplicata.LoadFromFile('\Softlogus\server\rel\f000150.fr3');
   fxduplicata.ShowReport;
 end;
 

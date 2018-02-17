@@ -237,7 +237,7 @@ begin
     QRCHEQUE.REFRESH;
 
     frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring := 'RELATÓRIO DE CHEQUES';
-    fxCHEQUE.LoadFromFile('\Store_Protheus\server\rel\f000083.fr3');
+    fxCHEQUE.LoadFromFile('\Softlogus\server\rel\f000083.fr3');
     fxCHEQUE.ShowReport;
   end;
 
@@ -252,7 +252,7 @@ begin
     QRCHEQUE.REFRESH;
 
     frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring := 'RELATÓRIO DE CHEQUES';
-    fxCHEQUE.LoadFromFile('\Store_Protheus\server\rel\f000082.fr3');
+    fxCHEQUE.LoadFromFile('\Softlogus\server\rel\f000082.fr3');
     fxCHEQUE.ShowReport;
   end;
 
@@ -269,12 +269,12 @@ begin
 
   if combo_relatorio.Text = 'RELAÇÃO SINTÉTICA' then
   begin
-    fxCHEQUE.LoadFromFile('\Store_Protheus\server\rel\f000083.fr3');
+    fxCHEQUE.LoadFromFile('\Softlogus\server\rel\f000083.fr3');
     fxCHEQUE.designreport;
   end;
   if combo_relatorio.Text = 'RELAÇÃO AGRUPADA POR CLIENTE' then
   begin
-    fxCHEQUE.LoadFromFile('\Store_Protheus\server\rel\f000082.fr3');
+    fxCHEQUE.LoadFromFile('\Softlogus\server\rel\f000082.fr3');
     fxCHEQUE.designreport;
   end;
 

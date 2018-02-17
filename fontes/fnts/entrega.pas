@@ -499,7 +499,7 @@ begin
 
 
 
-  rel_entrega.Report.LoadFromFile('\Store_Protheus\server\rel\F000169.fr3');
+  rel_entrega.Report.LoadFromFile('\Softlogus\server\rel\F000169.fr3');
   rel_entrega.ShowReport;
 
 
@@ -541,7 +541,7 @@ begin
   QUERY.SQL.ADD('ORDER BY CLI.NOME');
   query.open;
 
-  rel_entrega.Report.LoadFromFile('\Store_Protheus\server\rel\F000171.fr3');
+  rel_entrega.Report.LoadFromFile('\Softlogus\server\rel\F000171.fr3');
   rel_entrega.ShowReport;
 
 

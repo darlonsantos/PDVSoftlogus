@@ -6142,7 +6142,7 @@ begin
       mb_ok + MB_ICONERROR);
     Exit;
   end;
-  frmPrincipal.ExecutePrograma('\Store_Protheus\server\Store_Protheus_Sped.exe', '');
+  frmPrincipal.ExecutePrograma('\Softlogus\server\Softlogus_Sped.exe', '');
 end;
 
 procedure TfrmPrincipal.ControledeEntrega1Click(Sender: TObject);
@@ -6550,7 +6550,7 @@ end;
 
 procedure TfrmPrincipal.S7Click(Sender: TObject);
 begin
-  frmPrincipal.ExecutePrograma('\Store_Protheus\server\Store_Protheus_sped.exe', '');
+  frmPrincipal.ExecutePrograma('\Softlogus\server\Softlogus_sped.exe', '');
 end;
 
 procedure TfrmPrincipal.S8Click(Sender: TObject);
@@ -6915,7 +6915,7 @@ end;
 procedure TfrmPrincipal.ECFSpedFiscal2Click(Sender: TObject);
 begin
 
-  frmPrincipal.ExecutePrograma('\Store_Protheus\server\Store_Protheus_sped.exe', '');
+  frmPrincipal.ExecutePrograma('\Softlogus\server\Softlogus_sped.exe', '');
 end;
 
 procedure TfrmPrincipal.ECFMovimentoDirio3Click(Sender: TObject);

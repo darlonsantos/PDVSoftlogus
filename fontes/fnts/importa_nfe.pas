@@ -3473,7 +3473,7 @@ begin
   frmmodulo.qrrelatorio.fieldbyname('VALOR14').ASFLOAT := ecredito_icms.Value;
   frmmodulo.qrrelatorio.fieldbyname('VALOR15').ASFLOAT := evalor_nota.Value;
 
-  fximprime.LoadFromFile('\Store_Protheus\server\REL\F000197.fr3');
+  fximprime.LoadFromFile('\Softlogus\server\REL\F000197.fr3');
   fximprime.ShowReport;
 
 end;

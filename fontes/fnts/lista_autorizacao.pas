@@ -119,7 +119,7 @@ begin
     qrautorizacao.Open;
 
     frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring := 'RELA플O GERAL DE AUTORIZA합ES';
-    FXAUTORIZACAO.LoadFromFile('\Store_Protheus\server\rel\f000097.fr3');
+    FXAUTORIZACAO.LoadFromFile('\Softlogus\server\rel\f000097.fr3');
     FXAUTORIZACAO.ShowReport;
   end;
   if combo_relatorio.Text = 'AUTORIZA플O' then
@@ -139,7 +139,7 @@ begin
     qrautorizacao.Open;
 
     frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring := 'RELA플O ANALITICA DE AUTORIZA합ES';
-    FXAUTORIZACAO.LoadFromFile('\Store_Protheus\server\rel\f000097.fr3');
+    FXAUTORIZACAO.LoadFromFile('\Softlogus\server\rel\f000097.fr3');
     FXAUTORIZACAO.ShowReport;
   end;
 
@@ -173,12 +173,12 @@ begin
 
   if combo_relatorio.Text = 'GERAL' then
   begin
-    FXAUTORIZACAO.LoadFromFile('\Store_Protheus\server\rel\f000097.fr3');
+    FXAUTORIZACAO.LoadFromFile('\Softlogus\server\rel\f000097.fr3');
     FXAUTORIZACAO.DesignReport;
   end;
   if combo_relatorio.Text = 'AUTORIZA플O' then
   begin
-    FXAUTORIZACAO.LoadFromFile('\Store_Protheus\server\rel\f000097.fr3');
+    FXAUTORIZACAO.LoadFromFile('\Softlogus\server\rel\f000097.fr3');
     FXAUTORIZACAO.DesignReport;
   end;
 

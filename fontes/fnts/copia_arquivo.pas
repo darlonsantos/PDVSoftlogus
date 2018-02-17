@@ -103,8 +103,8 @@ var
 
 begin
 
-  origem := '\\' + conexao_sistema + '\c\Store_Protheus\server\atualizacao\Gerencial.exe';
-  destino := 'c:\Store_Protheus\server\atualizacao\Gerencial.exe';
+  origem := '\\' + conexao_sistema + '\c\Softlogus\server\atualizacao\Gerencial.exe';
+  destino := 'c:\Softlogus\server\atualizacao\Softlogus.exe';
 
   if frmprincipal.VersaoExe(destino) < frmprincipal.VersaoExe(origem) then
   begin

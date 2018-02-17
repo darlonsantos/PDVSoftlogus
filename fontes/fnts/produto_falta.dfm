@@ -680,7 +680,7 @@ object frmproduto_falta: Tfrmproduto_falta
     object Label20: TLabel
       Left = 59
       Top = 14
-      Width = 148
+      Width = 150
       Height = 23
       Caption = 'Vendas e Faltas'
       Font.Charset = ANSI_CHARSET
@@ -1269,7 +1269,6 @@ object frmproduto_falta: Tfrmproduto_falta
     Top = 252
   end
   object qrproduto: TVirtualTable
-    Options = [voPersistentData, voStored, voSkipUnSupportedFieldTypes]
     Active = True
     FieldDefs = <
       item

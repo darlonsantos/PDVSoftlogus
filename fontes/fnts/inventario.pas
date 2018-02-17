@@ -513,7 +513,7 @@ begin
 
   if not cont_inventario then exit;
 
-  fXproduto.LoadFromFile('\Store_Protheus\server\rel\f000126.fr3');
+  fXproduto.LoadFromFile('\Softlogus\server\rel\f000126.fr3');
   fxproduto.ShowReport;
 end;
 
@@ -562,7 +562,7 @@ end;
 
 procedure TfrmInventario.AdvGlowButton2Click(Sender: TObject);
 begin
-  fXproduto.LoadFromFile('\Store_Protheus\server\rel\f000126.fr3');
+  fXproduto.LoadFromFile('\Softlogus\server\rel\f000126.fr3');
   fxproduto.DesignReport;
 end;
 

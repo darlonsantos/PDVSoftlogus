@@ -341,7 +341,7 @@ begin
     qrnota.open;
 
     frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring := 'RELAÇÃO DE NOTA FISCAL DE SAÍDA';
-    FXNOTA.LoadFromFile('\Store_Protheus\server\rel\f000089.fr3');
+    FXNOTA.LoadFromFile('\Softlogus\server\rel\f000089.fr3');
     FXNOTA.ShowReport;
   end;
 
@@ -358,7 +358,7 @@ begin
     qrnota.open;
 
     frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring := 'RELAÇÃO DE ITENS DA NOTA FISCAL DE SAIDA';
-    FXNOTA.LoadFromFile('\Store_Protheus\server\rel\f000089_2.fr3');
+    FXNOTA.LoadFromFile('\Softlogus\server\rel\f000089_2.fr3');
     FXNOTA.ShowReport;
   end;
 
@@ -372,7 +372,7 @@ begin
     qrnota.open;
 
     frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring := 'RELAÇÃO DE NOTAS POR CFOP';
-    FXNOTA.LoadFromFile('\Store_Protheus\server\rel\f000061_2.fr3');
+    FXNOTA.LoadFromFile('\Softlogus\server\rel\f000061_2.fr3');
     FXNOTA.ShowReport;
   end;
 
@@ -386,7 +386,7 @@ begin
     qrnota.open;
 
     frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring := 'RELAÇÃO DE NOTAS POR CFOP COM ITENS';
-    FXNOTA.LoadFromFile('\Store_Protheus\server\rel\f000061_3.fr3');
+    FXNOTA.LoadFromFile('\Softlogus\server\rel\f000061_3.fr3');
     FXNOTA.ShowReport;
   end;
 
@@ -405,24 +405,24 @@ begin
 
   if combo_relatorio.Text = 'NOTA FISCAL DE SAÍDA' then
   begin
-    FXNOTA.LoadFromFile('\Store_Protheus\server\rel\f000089.fr3');
+    FXNOTA.LoadFromFile('\Softlogus\server\rel\f000089.fr3');
     FXNOTA.DesignReport;
   end;
   if combo_relatorio.Text = 'ITENS DA NOTA FISCAL DE SAÍDA' then
   begin
-    FXNOTA.LoadFromFile('\Store_Protheus\server\rel\f000089_2.fr3');
+    FXNOTA.LoadFromFile('\Softlogus\server\rel\f000089_2.fr3');
     FXNOTA.DesignReport;
   end;
 
   if combo_relatorio.ItemIndex = 2 then
   begin
-    FXNOTA.LoadFromFile('\Store_Protheus\server\rel\f000061_2.fr3');
+    FXNOTA.LoadFromFile('\Softlogus\server\rel\f000061_2.fr3');
     FXNOTA.DesignReport;
   end;
 
   if combo_relatorio.ItemIndex = 3 then
   begin
-    FXNOTA.LoadFromFile('\Store_Protheus\server\rel\f000061_3.fr3');
+    FXNOTA.LoadFromFile('\Softlogus\server\rel\f000061_3.fr3');
     FXNOTA.DesignReport;
   end;
 

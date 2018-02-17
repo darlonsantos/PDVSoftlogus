@@ -392,13 +392,13 @@ begin
     qros_produto.Params.ParamByName('CODNOTA').AsString := FRMMODULO.cdsos.FIELDBYNAME('CODIGO').ASSTRING;
     qros_produto.Open;
 
-    fxos.LoadFromFile('\Store_Protheus\server\rel\f000066.fr3');
-    //fxos.LoadFromFile('\Store_Protheus\server\rel\relatorio.rav');
+    fxos.LoadFromFile('\Softlogus\server\rel\f000066.fr3');
+    //fxos.LoadFromFile('\Softlogus\server\rel\relatorio.rav');
     fxos.ShowReport;
   end;
   if RAMO = 3 then
   begin
-    fxos.LoadFromFile('\Store_Protheus\server\rel\f000068.fr3');
+    fxos.LoadFromFile('\Softlogus\server\rel\f000068.fr3');
     fxos.ShowReport;
   end;
 end;
@@ -419,13 +419,13 @@ begin
 
   if RAMO = 1 then
   begin
-    fxos.LoadFromFile('\Store_Protheus\server\rel\f000065.fr3');
+    fxos.LoadFromFile('\Softlogus\server\rel\f000065.fr3');
     fxos.ShowReport;
   end;
   if RAMO = 3 then
   begin
 
-    fxos.LoadFromFile('\Store_Protheus\server\rel\f000067.fr3');
+    fxos.LoadFromFile('\Softlogus\server\rel\f000067.fr3');
     fxos.ShowReport;
   end;
 end;

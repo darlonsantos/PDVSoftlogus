@@ -702,7 +702,7 @@ object frmlista_venda2: Tfrmlista_venda2
     object Label53: TLabel
       Left = 59
       Top = 14
-      Width = 191
+      Width = 192
       Height = 23
       Caption = 'Relat'#243'rio de Vendas'
       Font.Charset = ANSI_CHARSET
@@ -1002,11 +1002,11 @@ object frmlista_venda2: Tfrmlista_venda2
     Top = 552
     Datasets = <
       item
-        DataSet = frmvenda_impressaoCP.FSCLIENTE
+        DataSet = frmvenda_reimpressao.FSCLIENTE
         DataSetName = 'FSCLIENTE'
       end
       item
-        DataSet = frmvenda_impressaoCP.fscontasreceber
+        DataSet = frmvenda_reimpressao.fscontasreceber
         DataSetName = 'fscontasreceber'
       end
       item
@@ -1014,7 +1014,7 @@ object frmlista_venda2: Tfrmlista_venda2
         DataSetName = 'fsvenda'
       end
       item
-        DataSet = frmvenda_fechamento.frxDBDataset1
+        DataSet = frmvenda_reimpressao.frxDBDataset1
         DataSetName = 'fsvenda_produto'
       end
       item
@@ -1067,7 +1067,7 @@ object frmlista_venda2: Tfrmlista_venda2
           Top = 66.708720000000000000
           Width = 41.574830000000000000
           Height = 11.338590000000000000
-          DataSet = frmvenda_impressaoCP.frxDBDataset1
+          DataSet = frmvenda_reimpressao.frxDBDataset1
           DataSetName = 'fsvenda_produto'
           DisplayFormat.DecimalSeparator = ','
           Font.Charset = DEFAULT_CHARSET
@@ -1084,7 +1084,7 @@ object frmlista_venda2: Tfrmlista_venda2
           Top = 66.708720000000000000
           Width = 246.551330000000000000
           Height = 11.338590000000000000
-          DataSet = frmvenda_impressaoCP.frxDBDataset1
+          DataSet = frmvenda_reimpressao.frxDBDataset1
           DataSetName = 'fsvenda_produto'
           DisplayFormat.DecimalSeparator = ','
           Font.Charset = DEFAULT_CHARSET
@@ -1102,7 +1102,7 @@ object frmlista_venda2: Tfrmlista_venda2
           Top = 66.708720000000000000
           Width = 36.015770000000000000
           Height = 11.338590000000000000
-          DataSet = frmvenda_impressaoCP.frxDBDataset1
+          DataSet = frmvenda_reimpressao.frxDBDataset1
           DataSetName = 'fsvenda_produto'
           DisplayFormat.DecimalSeparator = ','
           Font.Charset = DEFAULT_CHARSET
@@ -1120,7 +1120,7 @@ object frmlista_venda2: Tfrmlista_venda2
           Top = 66.708720000000000000
           Width = 83.149660000000000000
           Height = 11.338590000000000000
-          DataSet = frmvenda_impressaoCP.frxDBDataset1
+          DataSet = frmvenda_reimpressao.frxDBDataset1
           DataSetName = 'fsvenda_produto'
           DisplayFormat.DecimalSeparator = ','
           Font.Charset = DEFAULT_CHARSET
@@ -1138,7 +1138,7 @@ object frmlista_venda2: Tfrmlista_venda2
           Top = 66.708720000000000000
           Width = 83.149660000000000000
           Height = 11.338590000000000000
-          DataSet = frmvenda_impressaoCP.frxDBDataset1
+          DataSet = frmvenda_reimpressao.frxDBDataset1
           DataSetName = 'fsvenda_produto'
           DisplayFormat.DecimalSeparator = ','
           Font.Charset = DEFAULT_CHARSET
@@ -1156,7 +1156,7 @@ object frmlista_venda2: Tfrmlista_venda2
           Top = 66.708720000000000000
           Width = 83.149660000000000000
           Height = 11.338590000000000000
-          DataSet = frmvenda_impressaoCP.frxDBDataset1
+          DataSet = frmvenda_reimpressao.frxDBDataset1
           DataSetName = 'fsvenda_produto'
           DisplayFormat.DecimalSeparator = ','
           Font.Charset = DEFAULT_CHARSET
@@ -1273,7 +1273,7 @@ object frmlista_venda2: Tfrmlista_venda2
           Top = 22.677180000000000000
           Width = 442.205010000000000000
           Height = 15.118120000000000000
-          DataSet = frmvenda_impressaoCP.FSCLIENTE
+          DataSet = frmvenda_reimpressao.FSCLIENTE
           DataSetName = 'FSCLIENTE'
           DisplayFormat.DecimalSeparator = ','
           Font.Charset = ANSI_CHARSET
@@ -1377,7 +1377,7 @@ object frmlista_venda2: Tfrmlista_venda2
           Top = 24.456710000000000000
           Width = 109.606370000000000000
           Height = 15.118120000000000000
-          DataSet = frmvenda_impressaoCP.FSCLIENTE
+          DataSet = frmvenda_reimpressao.FSCLIENTE
           DataSetName = 'FSCLIENTE'
           DisplayFormat.DecimalSeparator = ','
           Font.Charset = ANSI_CHARSET
@@ -1395,7 +1395,7 @@ object frmlista_venda2: Tfrmlista_venda2
           Width = 109.606370000000000000
           Height = 15.118120000000000000
           DataField = 'RG'
-          DataSet = frmvenda_impressaoCP.FSCLIENTE
+          DataSet = frmvenda_reimpressao.FSCLIENTE
           DataSetName = 'FSCLIENTE'
           DisplayFormat.DecimalSeparator = ','
           Font.Charset = ANSI_CHARSET
@@ -1436,7 +1436,7 @@ object frmlista_venda2: Tfrmlista_venda2
           Width = 234.330860000000000000
           Height = 15.118120000000000000
           DataField = 'ENDERECO'
-          DataSet = frmvenda_impressaoCP.FSCLIENTE
+          DataSet = frmvenda_reimpressao.FSCLIENTE
           DataSetName = 'FSCLIENTE'
           DisplayFormat.DecimalSeparator = ','
           Font.Charset = ANSI_CHARSET
@@ -1454,7 +1454,7 @@ object frmlista_venda2: Tfrmlista_venda2
           Width = 234.330860000000000000
           Height = 15.118120000000000000
           DataField = 'BAIRRO'
-          DataSet = frmvenda_impressaoCP.FSCLIENTE
+          DataSet = frmvenda_reimpressao.FSCLIENTE
           DataSetName = 'FSCLIENTE'
           DisplayFormat.DecimalSeparator = ','
           Font.Charset = ANSI_CHARSET
@@ -1494,7 +1494,7 @@ object frmlista_venda2: Tfrmlista_venda2
           Top = 49.133890000000000000
           Width = 105.826840000000000000
           Height = 15.118120000000000000
-          DataSet = frmvenda_impressaoCP.FSCLIENTE
+          DataSet = frmvenda_reimpressao.FSCLIENTE
           DataSetName = 'FSCLIENTE'
           DisplayFormat.DecimalSeparator = ','
           Font.Charset = ANSI_CHARSET
@@ -1527,7 +1527,7 @@ object frmlista_venda2: Tfrmlista_venda2
           Width = 139.842610000000000000
           Height = 22.677180000000000000
           DataField = 'COMPLEMENTO'
-          DataSet = frmvenda_impressaoCP.FSCLIENTE
+          DataSet = frmvenda_reimpressao.FSCLIENTE
           DataSetName = 'FSCLIENTE'
           DisplayFormat.DecimalSeparator = ','
           Font.Charset = ANSI_CHARSET
@@ -1567,7 +1567,7 @@ object frmlista_venda2: Tfrmlista_venda2
           Top = 44.354360000000000000
           Width = 113.385900000000000000
           Height = 22.677180000000000000
-          DataSet = frmvenda_impressaoCP.FSCLIENTE
+          DataSet = frmvenda_reimpressao.FSCLIENTE
           DataSetName = 'FSCLIENTE'
           DisplayFormat.DecimalSeparator = ','
           Font.Charset = ANSI_CHARSET
@@ -1702,7 +1702,7 @@ object frmlista_venda2: Tfrmlista_venda2
           Top = 67.102350000000000000
           Width = 35.574830000000000000
           Height = 11.338590000000000000
-          DataSet = frmvenda_impressaoCP.frxDBDataset1
+          DataSet = frmvenda_reimpressao.frxDBDataset1
           DataSetName = 'fsvenda_produto'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -1719,7 +1719,7 @@ object frmlista_venda2: Tfrmlista_venda2
           Top = 67.102350000000000000
           Width = 36.574830000000000000
           Height = 11.338590000000000000
-          DataSet = frmvenda_impressaoCP.frxDBDataset1
+          DataSet = frmvenda_reimpressao.frxDBDataset1
           DataSetName = 'fsvenda_produto'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -1956,7 +1956,7 @@ object frmlista_venda2: Tfrmlista_venda2
           Top = 19.637761110000000000
           Width = 98.267780000000000000
           Height = 11.338590000000000000
-          DataSet = frmvenda_impressaoCP.frxDBDataset1
+          DataSet = frmvenda_reimpressao.frxDBDataset1
           DataSetName = 'fsvenda_produto'
           DisplayFormat.DecimalSeparator = ','
           Font.Charset = DEFAULT_CHARSET
@@ -1973,7 +1973,7 @@ object frmlista_venda2: Tfrmlista_venda2
           Top = 33.401540630000000000
           Width = 94.488250000000000000
           Height = 11.338590000000000000
-          DataSet = frmvenda_impressaoCP.frxDBDataset1
+          DataSet = frmvenda_reimpressao.frxDBDataset1
           DataSetName = 'fsvenda_produto'
           DisplayFormat.DecimalSeparator = ','
           Font.Charset = DEFAULT_CHARSET
@@ -1990,7 +1990,7 @@ object frmlista_venda2: Tfrmlista_venda2
           Top = 48.740123309999700000
           Width = 94.488250000000000000
           Height = 11.338590000000000000
-          DataSet = frmvenda_impressaoCP.frxDBDataset1
+          DataSet = frmvenda_reimpressao.frxDBDataset1
           DataSetName = 'fsvenda_produto'
           DisplayFormat.DecimalSeparator = ','
           Font.Charset = DEFAULT_CHARSET
@@ -2007,7 +2007,7 @@ object frmlista_venda2: Tfrmlista_venda2
           Top = 64.503897960000000000
           Width = 94.488250000000000000
           Height = 11.338590000000000000
-          DataSet = frmvenda_impressaoCP.frxDBDataset1
+          DataSet = frmvenda_reimpressao.frxDBDataset1
           DataSetName = 'fsvenda_produto'
           DisplayFormat.DecimalSeparator = ','
           Font.Charset = DEFAULT_CHARSET
@@ -2024,7 +2024,7 @@ object frmlista_venda2: Tfrmlista_venda2
           Top = 79.866100239999900000
           Width = 94.488250000000000000
           Height = 11.338590000000000000
-          DataSet = frmvenda_impressaoCP.frxDBDataset1
+          DataSet = frmvenda_reimpressao.frxDBDataset1
           DataSetName = 'fsvenda_produto'
           DisplayFormat.DecimalSeparator = ','
           Font.Charset = DEFAULT_CHARSET
@@ -2136,7 +2136,7 @@ object frmlista_venda2: Tfrmlista_venda2
           Top = 95.449099610000000000
           Width = 94.488250000000000000
           Height = 11.338590000000000000
-          DataSet = frmvenda_impressaoCP.frxDBDataset1
+          DataSet = frmvenda_reimpressao.frxDBDataset1
           DataSetName = 'fsvenda_produto'
           DisplayFormat.DecimalSeparator = ','
           Font.Charset = DEFAULT_CHARSET
@@ -2270,7 +2270,7 @@ object frmlista_venda2: Tfrmlista_venda2
         Height = 15.496065430000000000
         Top = 162.519790000000000000
         Width = 733.228820000000000000
-        DataSet = frmvenda_impressaoCP.frxDBDataset1
+        DataSet = frmvenda_reimpressao.frxDBDataset1
         DataSetName = 'fsvenda_produto'
         PrintIfDetailEmpty = True
         RowCount = 28
@@ -2281,7 +2281,7 @@ object frmlista_venda2: Tfrmlista_venda2
           Width = 41.574830000000000000
           Height = 11.338590000000000000
           DataField = 'CODPRODUTO'
-          DataSet = frmvenda_impressaoCP.frxDBDataset1
+          DataSet = frmvenda_reimpressao.frxDBDataset1
           DataSetName = 'fsvenda_produto'
           DisplayFormat.DecimalSeparator = ','
           Font.Charset = DEFAULT_CHARSET
@@ -2299,7 +2299,7 @@ object frmlista_venda2: Tfrmlista_venda2
           Width = 249.330860000000000000
           Height = 11.338590000000000000
           DataField = 'PRODUTO'
-          DataSet = frmvenda_impressaoCP.frxDBDataset1
+          DataSet = frmvenda_reimpressao.frxDBDataset1
           DataSetName = 'fsvenda_produto'
           DisplayFormat.DecimalSeparator = ','
           Font.Charset = DEFAULT_CHARSET
@@ -2317,7 +2317,7 @@ object frmlista_venda2: Tfrmlista_venda2
           Width = 34.456710000000000000
           Height = 11.338590000000000000
           DataField = 'NUMERACAO'
-          DataSet = frmvenda_impressaoCP.frxDBDataset1
+          DataSet = frmvenda_reimpressao.frxDBDataset1
           DataSetName = 'fsvenda_produto'
           DisplayFormat.DecimalSeparator = ','
           Font.Charset = DEFAULT_CHARSET
@@ -2336,7 +2336,7 @@ object frmlista_venda2: Tfrmlista_venda2
           Width = 83.149660000000000000
           Height = 11.338590000000000000
           DataField = 'QTDE'
-          DataSet = frmvenda_impressaoCP.frxDBDataset1
+          DataSet = frmvenda_reimpressao.frxDBDataset1
           DataSetName = 'fsvenda_produto'
           DisplayFormat.DecimalSeparator = ','
           DisplayFormat.FormatStr = '###,###,##0.00'
@@ -2357,7 +2357,7 @@ object frmlista_venda2: Tfrmlista_venda2
           Width = 83.149660000000000000
           Height = 11.338590000000000000
           DataField = 'UNITARIO'
-          DataSet = frmvenda_impressaoCP.frxDBDataset1
+          DataSet = frmvenda_reimpressao.frxDBDataset1
           DataSetName = 'fsvenda_produto'
           DisplayFormat.DecimalSeparator = ','
           DisplayFormat.FormatStr = '###,###,##0.00'
@@ -2378,7 +2378,7 @@ object frmlista_venda2: Tfrmlista_venda2
           Width = 83.149660000000000000
           Height = 11.338590000000000000
           DataField = 'TOTAL'
-          DataSet = frmvenda_impressaoCP.frxDBDataset1
+          DataSet = frmvenda_reimpressao.frxDBDataset1
           DataSetName = 'fsvenda_produto'
           DisplayFormat.DecimalSeparator = ','
           DisplayFormat.FormatStr = '###,###,##0.00'
@@ -2398,7 +2398,7 @@ object frmlista_venda2: Tfrmlista_venda2
           Width = 41.574830000000000000
           Height = 11.338590000000000000
           DataField = 'cor'
-          DataSet = frmvenda_fechamento.frxDBDataset1
+          DataSet = frmvenda_reimpressao.frxDBDataset1
           DataSetName = 'fsvenda_produto'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -2414,7 +2414,7 @@ object frmlista_venda2: Tfrmlista_venda2
           Width = 41.574830000000000000
           Height = 18.897650000000000000
           DataField = 'tamanho'
-          DataSet = frmvenda_fechamento.frxDBDataset1
+          DataSet = frmvenda_reimpressao.frxDBDataset1
           DataSetName = 'fsvenda_produto'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText

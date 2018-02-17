@@ -74,9 +74,9 @@ begin
 
   cont_inventario := false;
 
-  if FileExists('\Store_Protheus\server\bd\eDI.inf') then
+  if FileExists('\Softlogus\server\bd\eDI.inf') then
   begin
-    assignfile(txt, '\Store_Protheus\server\bd\eDI.inf');
+    assignfile(txt, '\Softlogus\server\bd\eDI.inf');
     reset(txt);
     while not eof(txt) do
     begin
@@ -115,7 +115,7 @@ procedure Tfrmdados_inventario.bimprimirClick(Sender: TObject);
 var txt: textfile;
   entrada: string;
 begin
-  assignfile(txt, '\Store_Protheus\server\bd\eDI.inf');
+  assignfile(txt, '\Softlogus\server\bd\eDI.inf');
   Rewrite(txt);
   writeln(txt, '1' + enumero.Text);
   writeln(txt, '2' + econtador.Text);
@@ -187,7 +187,7 @@ end;
 procedure Tfrmdados_inventario.bitbtn1Click(Sender: TObject);
 begin
 
-  frminventario.fXproduto.LoadFromFile('\Store_Protheus\server\rel\f000126.fr3');
+  frminventario.fXproduto.LoadFromFile('\Softlogus\server\rel\f000126.fr3');
   frminventario.fxproduto.designreport;
 
 end;

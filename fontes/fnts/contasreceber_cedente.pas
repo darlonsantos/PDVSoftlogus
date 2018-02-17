@@ -225,7 +225,7 @@ begin
   CobreBemX.PadroesBoleto.PadroesBoletoImpresso.ArquivoLogotipo :=
     frmmodulo.qrconfig_cobrebem.FIELDBYNAME('ARQUIVO_LOGOMARCA').ASSTRING;
   CobreBemX.PadroesBoleto.PadroesBoletoImpresso.CaminhoImagensCodigoBarras :=
-    'c:\Store_Protheus\server\cob\CobreBemX\Imagens\';
+    'c:\Softlogus\server\cob\CobreBemX\Imagens\';
 
   if frmmodulo.qrconfig_cobrebem.FIELDBYNAME('TIPO_BOLETO').ASSTRING = 'Padrao'
   then

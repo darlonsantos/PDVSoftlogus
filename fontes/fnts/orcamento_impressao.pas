@@ -2395,7 +2395,7 @@ begin
   else
     frmmodulo.qrrelatorio.FieldByName('linha8').asstring := '1';
   frmmodulo.qrrelatorio.post;
-  fxorcamento.LoadFromFile('\Store_Protheus\server\rel\f000069.fr3');
+  fxorcamento.LoadFromFile('\Softlogus\server\rel\f000069.fr3');
   fxorcamento.ShowReport;
 
 end;
@@ -2804,7 +2804,7 @@ begin
 
   if combo_modelo.ItemIndex = 0 then
   begin
-    fxorcamento.LoadFromFile('\Store_Protheus\server\rel\f000069.fr3');
+    fxorcamento.LoadFromFile('\Softlogus\server\rel\f000069.fr3');
     fxorcamento.designreport;
   end;
 end;

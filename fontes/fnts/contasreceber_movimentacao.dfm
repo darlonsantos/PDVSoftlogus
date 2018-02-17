@@ -151,7 +151,7 @@ object frmcontasreceber_movimentacao: Tfrmcontasreceber_movimentacao
       object Label15: TLabel
         Left = 8
         Top = 3
-        Width = 183
+        Width = 184
         Height = 13
         Caption = 'Total de Produtos Selecionadas:'
         Font.Charset = ANSI_CHARSET

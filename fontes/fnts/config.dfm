@@ -5941,6 +5941,7 @@ object frmconfig: Tfrmconfig
     Configuracoes.Geral.ValidarDigest = False
     Configuracoes.Geral.IncluirQRCodeXMLNFCe = False
     Configuracoes.Arquivos.AdicionarLiteral = True
+    Configuracoes.Arquivos.OrdenacaoPath = <>
     Configuracoes.Arquivos.EmissaoPathNFe = True
     Configuracoes.Arquivos.PathNFe = 'C:\icloud\SERVER\nfe'
     Configuracoes.Arquivos.PathInu = 'C:\icloud\SERVER\nfe'

@@ -328,7 +328,7 @@ begin
   qrnota.open;
 
   frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring := 'RELAÇÃO DE CONHECIMENTOS DE TRANSPORTE';
-  FXNOTA.LoadFromFile('\Store_Protheus\server\rel\f000068_2.fr3');
+  FXNOTA.LoadFromFile('\Softlogus\server\rel\f000068_2.fr3');
   FXNOTA.ShowReport;
 
 
@@ -344,7 +344,7 @@ begin
 
 
 
-  FXNOTA.LoadFromFile('\Store_Protheus\server\rel\f000068_2.fr3');
+  FXNOTA.LoadFromFile('\Softlogus\server\rel\f000068_2.fr3');
   FXNOTA.DesignReport;
 
 end;

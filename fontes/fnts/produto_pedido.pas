@@ -570,9 +570,9 @@ begin
   caminho := ExtractFilePath(ParamStr(0)) + 'ini\com.ini';
 
   // se nao existir caminho do PDF cria
-  if not DirectoryExists('c:\Store_Protheus\Server\PDF') then
+  if not DirectoryExists('c:\Softlogus\Server\PDF') then
   begin
-    ForceDirectories('c:\Store_Protheus\server\PDF');
+    ForceDirectories('c:\Softlogus\server\PDF');
   end;
 
   if efornecedor.Text = '' then
@@ -581,11 +581,11 @@ begin
   end;
 
   PDF.FileName := DBEdit2.Text + '-' + DBEdit23.Text + '.pdf';
-  PDF.DefaultPath := 'C:\Store_Protheus\Server\PDF\';
+  PDF.DefaultPath := 'C:\Softlogus\Server\PDF\';
   PDF.ShowDialog := false;
   PDF.ShowProgress := false;
   PDF.OverwritePrompt := false;
-  fxpedido.LoadFromFile('\Store_Protheus\server\rel\f000132_2.fr3');
+  fxpedido.LoadFromFile('\Softlogus\server\rel\f000132_2.fr3');
   fxpedido.PrepareReport();
   fxpedido.Export(PDF);
   // fxpedido.DesignReport;
@@ -642,7 +642,7 @@ begin
   EmailCorpo.Priority := mpHighest;
   EmailCorpo.Subject := edtEmailAssunto; // assunto
   TIdAttachmentFile.create(EmailCorpo.MessageParts,
-    Tfilename('C:\Store_Protheus\Server\PDF\' + DBEdit2.Text + '-' + DBEdit23.Text
+    Tfilename('C:\Softlogus\Server\PDF\' + DBEdit2.Text + '-' + DBEdit23.Text
     + '.pdf'));
   SMTP.Host := edtSmtpHost;
   SMTP.AuthType := satDefault;
@@ -1145,7 +1145,7 @@ begin
   qrpedido_fornecedor.sql.add('select * from c000009 where codigo = ''' +
     frmmodulo.qrpedido_produto.fieldbyname('codfornecedor').asstring + '''');
   qrpedido_fornecedor.open;
-  fxpedido.LoadFromFile('\Store_Protheus\server\rel\f000132.fr3');
+  fxpedido.LoadFromFile('\Softlogus\server\rel\f000132.fr3');
   fxpedido.ShowReport;
 end;
 

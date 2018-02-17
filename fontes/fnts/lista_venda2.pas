@@ -800,7 +800,7 @@ begin
       DateEdit1.Text + ' a ' + DateEdit2.Text;
     FRMMODULO.qrrelatorio.fieldbyname('LINHA1').asstring :=
       'RELATÓRIO DE COMISSÕES';
-    fxvenda.LoadFromFile('\Store_Protheus\server\REL\F000120.fr3');
+    fxvenda.LoadFromFile('\Softlogus\server\REL\F000120.fr3');
     fxvenda.ShowReport;
 
   end;
@@ -838,7 +838,7 @@ begin
       DateEdit1.Text + ' a ' + DateEdit2.Text;
     FRMMODULO.qrrelatorio.fieldbyname('LINHA1').asstring :=
       'PRODUTOS VENDIDOS EM CONDICIONAL';
-    fxvenda.LoadFromFile('\Store_Protheus\server\REL\F000158.fr3');
+    fxvenda.LoadFromFile('\Softlogus\server\REL\F000158.fr3');
     fxvenda.ShowReport;
   end;
 
@@ -859,9 +859,9 @@ begin
     FRMMODULO.qrrelatorio.fieldbyname('LINHA1').asstring :=
       'RELATÓRIO DE VENDAS';
     if combo_forma.ItemIndex = 0 then
-      fxvenda.LoadFromFile('\Store_Protheus\server\rel\f000033.fr3')
+      fxvenda.LoadFromFile('\Softlogus\server\rel\f000033.fr3')
     else
-      fxvenda.LoadFromFile('\Store_Protheus\server\rel\f000033_2.fr3');
+      fxvenda.LoadFromFile('\Softlogus\server\rel\f000033_2.fr3');
 
     fxvenda.ShowReport;
   end;
@@ -901,7 +901,7 @@ begin
         DateEdit1.Text + ' a ' + DateEdit2.Text;
       FRMMODULO.qrrelatorio.fieldbyname('LINHA1').asstring :=
         'RESUMO DE VENDAS DE PRODUTOS/LUCRO';
-      fxvenda.LoadFromFile('\Store_Protheus\server\REL\F000032.fr3');
+      fxvenda.LoadFromFile('\Softlogus\server\REL\F000032.fr3');
       fxvenda.ShowReport;
     end
     else
@@ -930,7 +930,7 @@ begin
         DateEdit1.Text + ' a ' + DateEdit2.Text;
       FRMMODULO.qrrelatorio.fieldbyname('LINHA1').asstring :=
         'RESUMO DE VENDAS DE PRODUTOS/LUCRO';
-      fxvenda.LoadFromFile('\Store_Protheus\server\REL\F000032b.fr3');
+      fxvenda.LoadFromFile('\Softlogus\server\REL\F000032b.fr3');
       fxvenda.ShowReport;
     end;
   end;
@@ -959,7 +959,7 @@ begin
       DateEdit1.Text + ' a ' + DateEdit2.Text;
     FRMMODULO.qrrelatorio.fieldbyname('LINHA1').asstring :=
       'RELAÇÃO DE VENDAS ANALÍTICA';
-    fxvenda.LoadFromFile('\Store_Protheus\server\REL\F000034.fr3');
+    fxvenda.LoadFromFile('\Softlogus\server\REL\F000034.fr3');
     fxvenda.ShowReport;
   end;
 
@@ -1060,7 +1060,7 @@ begin
     FRMMODULO.qrrelatorio.fieldbyname('linha2').asstring := 'PERÍODO: ' +
       DateEdit1.Text + ' a ' + DateEdit2.Text;
     FRMMODULO.qrrelatorio.fieldbyname('LINHA1').asstring := 'VENDA DE PRODUTOS';
-    fxvenda.LoadFromFile('\Store_Protheus\server\REL\F000036.fr3');
+    fxvenda.LoadFromFile('\Softlogus\server\REL\F000036.fr3');
     fxvenda.ShowReport;
   end;
   if combo_relatorio.Text = 'RESUMO DE VENDAS POR VENDEDOR' then
@@ -1076,7 +1076,7 @@ begin
 
     FRMMODULO.qrrelatorio.fieldbyname('LINHA1').asstring :=
       'RESUMO DE VENDAS POR VENDEDOR';
-    fxvenda.LoadFromFile('\Store_Protheus\server\rel\f000037.fr3');
+    fxvenda.LoadFromFile('\Softlogus\server\rel\f000037.fr3');
     fxvenda.ShowReport;
   end;
 
@@ -1323,7 +1323,7 @@ begin
     qrvenda_produto3.Params.ParamByName('dataf').asdatetime := DateEdit2.Date;
     qrvenda_produto3.OPEN;
     FRMMODULO.qrrelatorio.fieldbyname('LINHA1').asstring := 'VENDAS/COMISSÃO';
-    fxvenda.LoadFromFile('\Store_Protheus\server\rel\f000038.fr3');
+    fxvenda.LoadFromFile('\Softlogus\server\rel\f000038.fr3');
     fxvenda.ShowReport;
   end;
 
@@ -1439,7 +1439,7 @@ begin
 
     FRMMODULO.qrrelatorio.fieldbyname('LINHA1').asstring :=
       'VENDAS/RECEBIMENTO';
-    fxvenda.LoadFromFile('\Store_Protheus\server\rel\f000099.fr3');
+    fxvenda.LoadFromFile('\Softlogus\server\rel\f000099.fr3');
     fxvenda.ShowReport;
 
   end;
@@ -1469,7 +1469,7 @@ begin
 
     FRMMODULO.qrrelatorio.fieldbyname('LINHA1').asstring :=
       'RESUMO DE VENDAS/RECEBIMENTO';
-    fxvenda.LoadFromFile('\Store_Protheus\server\rel\f000099_1.fr3');
+    fxvenda.LoadFromFile('\Softlogus\server\rel\f000099_1.fr3');
     fxvenda.ShowReport;
 
   end;
@@ -1567,7 +1567,7 @@ begin
     end;
     FRMMODULO.qrrelatorio.fieldbyname('LINHA1').asstring :=
       'CURVA ABC DE PRODUTOS';
-    fxvenda.LoadFromFile('\Store_Protheus\server\rel\f000039.fr3');
+    fxvenda.LoadFromFile('\Softlogus\server\rel\f000039.fr3');
     fxvenda.ShowReport;
 
   end;
@@ -1611,7 +1611,7 @@ begin
     qrmeta.OPEN;
     FRMMODULO.qrrelatorio.fieldbyname('LINHA1').asstring :=
       'RELATÓRIO DE VENDAS/METAS';
-    fxvenda.LoadFromFile('\Store_Protheus\server\rel\f000181.fr3');
+    fxvenda.LoadFromFile('\Softlogus\server\rel\f000181.fr3');
     fxvenda.ShowReport;
   end;
 
@@ -1699,7 +1699,7 @@ begin
       DateEdit1.Text + ' a ' + DateEdit2.Text;
     FRMMODULO.qrrelatorio.fieldbyname('LINHA1').asstring :=
       'VENDA DE PRODUTOS POR DIA';
-    fxvenda.LoadFromFile('\Store_Protheus\server\rel\F000183.fr3');
+    fxvenda.LoadFromFile('\Softlogus\server\rel\F000183.fr3');
     fxvenda.ShowReport;
   end;
   frmPrincipal.logUC('Abriu Relatorio Vendas - ' + frmPrincipal.RemoveAcentos
@@ -2032,65 +2032,65 @@ begin
 
   if combo_relatorio.Text = 'PRODUTOS VENDIDOS EM CONDICIONAL' then
   begin
-    fxvenda.LoadFromFile('\Store_Protheus\server\REL\F000158.fr3');
+    fxvenda.LoadFromFile('\Softlogus\server\REL\F000158.fr3');
     fxvenda.designreport;
   end;
 
   if combo_relatorio.Text = 'RELAÇÃO SINTÉTICA' then
   begin
-    fxvenda.LoadFromFile('\Store_Protheus\server\rel\f000033.fr3');
+    fxvenda.LoadFromFile('\Softlogus\server\rel\f000033.fr3');
     fxvenda.designreport;
   end;
   if combo_relatorio.Text = 'RESUMO DE VENDAS DE PRODUTOS' then
   begin
-    fxvenda.LoadFromFile('\Store_Protheus\server\REL\F000032.fr3');
+    fxvenda.LoadFromFile('\Softlogus\server\REL\F000032.fr3');
     fxvenda.designreport;
   end;
 
   if combo_relatorio.Text = 'RELAÇÃO ANALÍTICA' then
   begin
 
-    fxvenda.LoadFromFile('\Store_Protheus\server\REL\F000034.fr3');
+    fxvenda.LoadFromFile('\Softlogus\server\REL\F000034.fr3');
     fxvenda.designreport;
   end;
   if combo_relatorio.Text = 'VENDAS DE PRODUTOS' then
   begin
-    fxvenda.LoadFromFile('\Store_Protheus\server\REL\F000036.fr3');
+    fxvenda.LoadFromFile('\Softlogus\server\REL\F000036.fr3');
     fxvenda.designreport;
   end;
   if combo_relatorio.Text = 'RESUMO DE VENDAS POR VENDEDOR' then
   begin
-    fxvenda.LoadFromFile('\Store_Protheus\server\rel\f000037.fr3');
+    fxvenda.LoadFromFile('\Softlogus\server\rel\f000037.fr3');
     fxvenda.designreport;
   end;
 
   if combo_relatorio.Text = 'VENDAS / COMISSÃO' then
   begin
-    fxvenda.LoadFromFile('\Store_Protheus\server\rel\f000038.fr3');
+    fxvenda.LoadFromFile('\Softlogus\server\rel\f000038.fr3');
     fxvenda.designreport;
   end;
 
   if combo_relatorio.Text = 'VENDAS / RECEBIMENTO' then
   begin
-    fxvenda.LoadFromFile('\Store_Protheus\server\rel\f000099.fr3');
+    fxvenda.LoadFromFile('\Softlogus\server\rel\f000099.fr3');
     fxvenda.designreport;
   end;
 
   if combo_relatorio.Text = 'CURVA ABC DE PRODUTOS' then
   begin
-    fxvenda.LoadFromFile('\Store_Protheus\server\rel\f000039.fr3');
+    fxvenda.LoadFromFile('\Softlogus\server\rel\f000039.fr3');
     fxvenda.designreport;
 
   end;
   if combo_relatorio.Text = 'COMISSÃO POR VENDA A VISTA/RECEBIMENTOS' then
   begin
-    fxvenda.LoadFromFile('\Store_Protheus\server\rel\f000120.fr3');
+    fxvenda.LoadFromFile('\Softlogus\server\rel\f000120.fr3');
     fxvenda.designreport;
   end;
 
   if combo_relatorio.Text = 'RESUMO DE VENDAS / META POR VENDEDOR' then
   begin
-    fxvenda.LoadFromFile('\Store_Protheus\server\rel\f000181.fr3');
+    fxvenda.LoadFromFile('\Softlogus\server\rel\f000181.fr3');
     fxvenda.designreport;
   end;
 end;

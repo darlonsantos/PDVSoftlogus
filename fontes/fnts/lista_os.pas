@@ -313,7 +313,7 @@ begin
     QRos.Params.ParamByName('dataf').asdatetime := dateedit2.date;
     qros.open;
     frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring := 'RELATÓRIO DE ORDENS DE SERVIÇO - SINTÉTICO';
-    fXOS.LoadFromFile('\Store_Protheus\server\rel\f000051.fr3');
+    fXOS.LoadFromFile('\Softlogus\server\rel\f000051.fr3');
     fXOS.ShowReport;
   end;
   if combo_relatorio.Text = 'RELAÇÃO DE O.S. AGRUPADA POR TÉCNICO' then
@@ -325,7 +325,7 @@ begin
     QRos.Params.ParamByName('dataf').asdatetime := dateedit2.date;
     qros.open;
     frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring := 'RELATÓRIO DE ORDENS DE SERVIÇO - AGRUPADA POR TÉCNICO';
-    fXOS.LoadFromFile('\Store_Protheus\server\rel\f000052.fr3');
+    fXOS.LoadFromFile('\Softlogus\server\rel\f000052.fr3');
     fXOS.ShowReport;
   end;
 
@@ -337,7 +337,7 @@ begin
     frmmodulo.qrservicos_periodicos.sql.add('select * from servicos_periodicos where STATUS IS NOT NULL ' + cliente + tecnico + ' order by codcliente');
     frmmodulo.qrservicos_periodicos.open;
     frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring := 'RELATÓRIO DE SERVIÇOS PERIODICOS';
-    fXOS.LoadFromFile('\Store_Protheus\server\rel\f000052.fr3');
+    fXOS.LoadFromFile('\Softlogus\server\rel\f000052.fr3');
     fXOS.ShowReport;
   end;
 
@@ -384,7 +384,7 @@ begin
     qros_servico.open;
 
     frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring := 'RELATÓRIO DE SERVIÇOS - AGRUPADA POR TÉCNICO';
-    fXOS.LoadFromFile('\Store_Protheus\server\rel\f000051_2.fr3');
+    fXOS.LoadFromFile('\Softlogus\server\rel\f000051_2.fr3');
     fXOS.ShowReport;
 
   end;
@@ -415,18 +415,18 @@ begin
 
   if combo_relatorio.Text = 'RELAÇÃO DE O.S. - SINTÉTICA' then
   begin
-    fXOS.LoadFromFile('\Store_Protheus\server\rel\f000051.fr3');
+    fXOS.LoadFromFile('\Softlogus\server\rel\f000051.fr3');
     fXOS.DesignReport;
   end;
   if combo_relatorio.Text = 'RELAÇÃO DE O.S. AGRUPADA POR TÉCNICO' then
   begin
-    fXOS.LoadFromFile('\Store_Protheus\server\rel\f000052.fr3');
+    fXOS.LoadFromFile('\Softlogus\server\rel\f000052.fr3');
     fXOS.designreport;
   end;
 
   if combo_relatorio.Text = 'RELAÇÃO DE O.S. AGRUPADA POR TÉCNICO' then
   begin
-    fXOS.LoadFromFile('\Store_Protheus\server\rel\f000051_2.fr3');
+    fXOS.LoadFromFile('\Softlogus\server\rel\f000051_2.fr3');
     fXOS.designreport;
   end;
 end;

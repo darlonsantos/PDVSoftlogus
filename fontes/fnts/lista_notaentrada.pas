@@ -212,7 +212,7 @@ begin
 
 
     frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring := 'RELA플O DE NOTA FISCAL DE ENTRADA';
-    FXNOTA.LoadFromFile('\Store_Protheus\server\rel\f000088.fr3');
+    FXNOTA.LoadFromFile('\Softlogus\server\rel\f000088.fr3');
     FXNOTA.ShowReport;
   end;
   if combo_relatorio.Text = 'ITENS DA NOTA FISCAL DE ENTRADA' then
@@ -222,7 +222,7 @@ begin
     //qrFORNECEDOR.sql.add('select * from c000009 where NOME IS NOT NULL '+FORNECEDOR+' order by '+COMBO_ORDEM.TEXT);
     //qrFORNECEDOR.open;
     frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring := 'RELA플O DE ITENS DA NOTA FISCAL DE ENTRADA';
-    FXNOTA.LoadFromFile('\Store_Protheus\server\rel\f000088.fr3');
+    FXNOTA.LoadFromFile('\Softlogus\server\rel\f000088.fr3');
     FXNOTA.ShowReport;
   end;
 
@@ -236,7 +236,7 @@ begin
     qrnota.open;
 
     frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring := 'RELA플O DE NOTAS DE ENTRADA POR CFOP';
-    FXNOTA.LoadFromFile('\Store_Protheus\server\rel\f000088_2.fr3');
+    FXNOTA.LoadFromFile('\Softlogus\server\rel\f000088_2.fr3');
     FXNOTA.ShowReport;
   end;
 
@@ -254,17 +254,17 @@ begin
 
   if combo_relatorio.Text = 'NOTA FISCAL DE ENTRADA' then
   begin
-    FXNOTA.LoadFromFile('\Store_Protheus\server\rel\f000088.fr3');
+    FXNOTA.LoadFromFile('\Softlogus\server\rel\f000088.fr3');
     FXNOTA.DesignReport;
   end;
   if combo_relatorio.Text = 'ITENS DA NOTA FISCAL DE ENTRADA' then
   begin
-    FXNOTA.LoadFromFile('\Store_Protheus\server\rel\f000088.fr3');
+    FXNOTA.LoadFromFile('\Softlogus\server\rel\f000088.fr3');
     FXNOTA.DesignReport;
   end;
   if combo_relatorio.Text = 'RELA플O DE NOTAS POR CFOP' then
   begin
-    FXNOTA.LoadFromFile('\Store_Protheus\server\rel\f000088_2.fr3');
+    FXNOTA.LoadFromFile('\Softlogus\server\rel\f000088_2.fr3');
     FXNOTA.DesignReport;
   end;
 

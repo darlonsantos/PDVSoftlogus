@@ -219,7 +219,7 @@ begin
     qrCARTAO.open;
 
     frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring := 'MOVIMENTO DE CARTÃO';
-    fxCARTAO.LoadFromFile('\Store_Protheus\server\rel\f000192.fr3');
+    fxCARTAO.LoadFromFile('\Softlogus\server\rel\f000192.fr3');
     fxCARTAO.ShowReport;
   end;
 end;
@@ -234,7 +234,7 @@ begin
 
   if combo_relatorio.Text = 'RELAÇÃO' then
   begin
-    fxCARTAO.LoadFromFile('\Store_Protheus\server\rel\f000192.fr3');
+    fxCARTAO.LoadFromFile('\Softlogus\server\rel\f000192.fr3');
     fxCARTAO.designreport;
   end;
 end;

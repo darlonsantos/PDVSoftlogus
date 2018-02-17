@@ -538,6 +538,10 @@ object frmnotafiscal_menu: Tfrmnotafiscal_menu
         TabOrder = 2
         object TabSheet5: TTabSheet
           Caption = 'Respostas'
+          ExplicitLeft = 0
+          ExplicitTop = 0
+          ExplicitWidth = 0
+          ExplicitHeight = 0
           object MemoResp: TMemo
             Left = 0
             Top = 0
@@ -566,6 +570,10 @@ object frmnotafiscal_menu: Tfrmnotafiscal_menu
         object TabSheet6: TTabSheet
           Caption = 'XML Resposta'
           ImageIndex = 1
+          ExplicitLeft = 0
+          ExplicitTop = 0
+          ExplicitWidth = 0
+          ExplicitHeight = 0
           object WBResposta: TWebBrowser
             Left = 0
             Top = 0
@@ -586,6 +594,10 @@ object frmnotafiscal_menu: Tfrmnotafiscal_menu
         object TabSheet8: TTabSheet
           Caption = 'Log'
           ImageIndex = 2
+          ExplicitLeft = 0
+          ExplicitTop = 0
+          ExplicitWidth = 0
+          ExplicitHeight = 0
           object memoLog: TMemo
             Left = 0
             Top = 0
@@ -599,6 +611,10 @@ object frmnotafiscal_menu: Tfrmnotafiscal_menu
         object TabSheet9: TTabSheet
           Caption = 'NFe'
           ImageIndex = 3
+          ExplicitLeft = 0
+          ExplicitTop = 0
+          ExplicitWidth = 0
+          ExplicitHeight = 0
           object trvwNFe: TTreeView
             Left = 0
             Top = 0
@@ -612,6 +628,10 @@ object frmnotafiscal_menu: Tfrmnotafiscal_menu
         object TabSheet2: TTabSheet
           Caption = 'Configura'#231#245'es'
           ImageIndex = 5
+          ExplicitLeft = 0
+          ExplicitTop = 0
+          ExplicitWidth = 0
+          ExplicitHeight = 0
           object PageControl1: TPageControl
             Left = 0
             Top = 0
@@ -623,6 +643,10 @@ object frmnotafiscal_menu: Tfrmnotafiscal_menu
             TabOrder = 0
             object TabSheet3: TTabSheet
               Caption = 'Certificado'
+              ExplicitLeft = 0
+              ExplicitTop = 0
+              ExplicitWidth = 0
+              ExplicitHeight = 0
               object GroupBox2: TGroupBox
                 Left = 0
                 Top = 4
@@ -720,6 +744,10 @@ object frmnotafiscal_menu: Tfrmnotafiscal_menu
             object TabSheet4: TTabSheet
               Caption = 'Geral'
               ImageIndex = 1
+              ExplicitLeft = 0
+              ExplicitTop = 0
+              ExplicitWidth = 0
+              ExplicitHeight = 0
               object Label11: TLabel
                 Left = 272
                 Top = 16
@@ -830,6 +858,10 @@ object frmnotafiscal_menu: Tfrmnotafiscal_menu
             object TabSheet7: TTabSheet
               Caption = 'WebService'
               ImageIndex = 2
+              ExplicitLeft = 0
+              ExplicitTop = 0
+              ExplicitWidth = 0
+              ExplicitHeight = 0
               object Label12: TLabel
                 Left = 8
                 Top = 16
@@ -981,6 +1013,10 @@ object frmnotafiscal_menu: Tfrmnotafiscal_menu
             object TabSheet11: TTabSheet
               Caption = 'Email'
               ImageIndex = 4
+              ExplicitLeft = 0
+              ExplicitTop = 0
+              ExplicitWidth = 0
+              ExplicitHeight = 0
               object Label31: TLabel
                 Left = 8
                 Top = 16
@@ -3658,7 +3694,7 @@ object frmnotafiscal_menu: Tfrmnotafiscal_menu
     Left = 904
     Top = 488
     Bitmap = {
-      494C010171007300640010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C010171007300680010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       000000000000360000002800000040000000D0010000010020000000000000D0
       010000000000000000000000000000000000000000003E3E3E0017171700FFFF
       FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
@@ -8603,7 +8639,7 @@ object frmnotafiscal_menu: Tfrmnotafiscal_menu
     Left = 944
     Top = 488
     Bitmap = {
-      494C010109000B00640010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C010109000B00680010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000003000000001002000000000000030
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
@@ -11252,7 +11288,6 @@ object frmnotafiscal_menu: Tfrmnotafiscal_menu
     LogoemCima = False
     TamanhoFonteEndereco = 0
     RecuoLogo = 0
-    TributosSeparadamente = False
     FastFile = 'C:\store_protheus\Server\nfe\danfe\DANFE.fr3'
     FastFileEvento = 'C:\Store_Protheus\Server\rel\EVENTOS.fr3'
     EspessuraBorda = 1

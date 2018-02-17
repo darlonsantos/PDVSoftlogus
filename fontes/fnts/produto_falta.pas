@@ -267,13 +267,13 @@ begin
   FRMMODULO.qrrelatorio.FIELDBYNAME('LINHA4').ASSTRING := 'ESTOQUE: ' +
     combo_estoque.text;
 
-  fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000084.fr3');
+  fxproduto.LoadFromFile('\Softlogus\server\rel\f000084.fr3');
   fxproduto.ShowReport;
 end;
 
 procedure Tfrmproduto_falta.EditarRelatrio1Click(Sender: TObject);
 begin
-  fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000084.fr3');
+  fxproduto.LoadFromFile('\Softlogus\server\rel\f000084.fr3');
   fxproduto.DesignReport;
 End;
 

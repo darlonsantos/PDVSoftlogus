@@ -294,16 +294,16 @@ begin
 
   if qrcliente.fieldbyname('tipo').asinteger = 1 then
   // pessoa fisica
-    fxcontrato.LoadFromFile('\Store_Protheus\server\rel\contrato_reserva.fr3')
+    fxcontrato.LoadFromFile('\Softlogus\server\rel\contrato_reserva.fr3')
   else
   begin
     // pessoa juridica
     if qrcliente.FieldByName('resp2_nome').asstring <> '' then
     // dois responsaveis
-      fxcontrato.LoadFromFile('\Store_Protheus\server\rel\contrato_reserva_j2.fr3')
+      fxcontrato.LoadFromFile('\Softlogus\server\rel\contrato_reserva_j2.fr3')
     else
     // um responsavel
-      fxcontrato.LoadFromFile('\Store_Protheus\server\rel\contrato_reserva_j1.fr3')
+      fxcontrato.LoadFromFile('\Softlogus\server\rel\contrato_reserva_j1.fr3')
 
   end;
   Fxcontrato.ShowReport;
@@ -320,7 +320,7 @@ end;
 
 procedure TfrmContrato_reserva.FormShow(Sender: TObject);
 begin
-  arquivo_ini := TIniFile.Create('c:\Store_Protheus\server\dll\contrato.ini');
+  arquivo_ini := TIniFile.Create('c:\Softlogus\server\dll\contrato.ini');
 
   ed_produto.Text := arquivo_ini.ReadString('PRODUTO', 'NOME', '');
   ed_test1_nome.Text := arquivo_ini.ReadString('TESTEMUNHA', 'NOME1', '');
@@ -349,7 +349,7 @@ end;
 
 procedure TfrmContrato_reserva.BitBtn1Click(Sender: TObject);
 begin
-  fxcontrato.LoadFromFile('\Store_Protheus\server\rel\contrato_reserva.fr3');
+  fxcontrato.LoadFromFile('\Softlogus\server\rel\contrato_reserva.fr3');
   Fxcontrato.DesignReport;
 end;
 

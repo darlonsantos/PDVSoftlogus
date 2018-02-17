@@ -414,7 +414,7 @@ begin
         qrcontasreceber.next;
       end;
 
-      FXduplicata.LoadFromFile('\Store_Protheus\server\rel\f000150.fr3');
+      FXduplicata.LoadFromFile('\Softlogus\server\rel\f000150.fr3');
       FXduplicata.ShowReport;
     end;
 

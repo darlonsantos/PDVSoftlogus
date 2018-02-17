@@ -451,7 +451,7 @@ begin
 
      //----------------------------------- CONFIGURACOES DO BOLETO -----------------------------\\
   CobreBemX.PadroesBoleto.PadroesBoletoImpresso.ArquivoLogotipo := frmmodulo.qrconfig_cobrebem.fieldbyname('ARQUIVO_LOGOMARCA').asstring;
-  CobreBemX.PadroesBoleto.PadroesBoletoImpresso.CaminhoImagensCodigoBarras := '\Store_Protheus\server\cob\CobreBemX\Imagens\';
+  CobreBemX.PadroesBoleto.PadroesBoletoImpresso.CaminhoImagensCodigoBarras := '\Softlogus\server\cob\CobreBemX\Imagens\';
 
 
 

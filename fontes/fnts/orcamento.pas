@@ -5267,11 +5267,11 @@ procedure TfrmOrcamento.EnviarEmail1Click(Sender: TObject);
 begin
   exp_PDF.FileName := frmOrcamento.DBEdit1.text + '-' +
     frmOrcamento.enomecliente.text + '.pdf';
-  exp_PDF.DefaultPath := 'C:\Store_Protheus\Server\PDF\';
+  exp_PDF.DefaultPath := 'C:\Softlogus\Server\PDF\';
   exp_PDF.ShowDialog := FALSE;
   exp_PDF.ShowProgress := FALSE;
   exp_PDF.OverwritePrompt := FALSE;
-  frxReport1.LoadFromFile('\Store_Protheus\server\rel\f000069.fr3');
+  frxReport1.LoadFromFile('\Softlogus\server\rel\f000069.fr3');
   frxReport1.PrepareReport();
   frxReport1.Export(exp_PDF);
 end;
@@ -5295,18 +5295,18 @@ begin
   caminho := ExtractFilePath(ParamStr(0)) + 'ini\com.ini';
 
   // se nao existir caminho do PDF cria
-  if not DirectoryExists('c:\Store_Protheus\Server\PDF') then
+  if not DirectoryExists('c:\Softlogus\Server\PDF') then
   begin
-    ForceDirectories('c:\Store_Protheus\server\PDF');
+    ForceDirectories('c:\Softlogus\server\PDF');
   end;
 
   exp_PDF.FileName := frmOrcamento.DBEdit1.text + '-' +
     frmOrcamento.enomecliente.text + '.pdf';
-  exp_PDF.DefaultPath := 'C:\Store_Protheus\Server\PDF\';
+  exp_PDF.DefaultPath := 'C:\Softlogus\Server\PDF\';
   exp_PDF.ShowDialog := FALSE;
   exp_PDF.ShowProgress := FALSE;
   exp_PDF.OverwritePrompt := FALSE;
-  frxReport1.LoadFromFile('\Store_Protheus\server\rel\f000069.fr3');
+  frxReport1.LoadFromFile('\Softlogus\server\rel\f000069.fr3');
   frxReport1.PrepareReport();
   frxReport1.Export(exp_PDF);
 
@@ -5361,7 +5361,7 @@ begin
   EmailCorpo.Priority := mpHighest;
   EmailCorpo.Subject := edtEmailAssunto; // assunto
   TIdAttachmentFile.create(EmailCorpo.MessageParts,
-    Tfilename('C:\Store_Protheus\Server\PDF\' + frmOrcamento.DBEdit1.text + '-' +
+    Tfilename('C:\Softlogus\Server\PDF\' + frmOrcamento.DBEdit1.text + '-' +
     frmOrcamento.enomecliente.text + '.pdf'));
   SMTP.Host := edtSmtpHost;
   SMTP.AuthType := satDefault;

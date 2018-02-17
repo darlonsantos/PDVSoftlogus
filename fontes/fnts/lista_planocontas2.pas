@@ -136,7 +136,7 @@ begin
 
 
     frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring := 'PLANO DE CONTAS';
-    FXplanocontas.LoadFromFile('\Store_Protheus\server\rel\f000035.fr3');
+    FXplanocontas.LoadFromFile('\Softlogus\server\rel\f000035.fr3');
     FXplanocontas.ShowReport;
   end;
 
@@ -155,7 +155,7 @@ begin
 
   if combo_relatorio.Text = 'RELAÇÃO' then
   begin
-    FXplanocontas.LoadFromFile('\Store_Protheus\server\rel\f000035.fr3');
+    FXplanocontas.LoadFromFile('\Softlogus\server\rel\f000035.fr3');
     FXplanocontas.DesignReport;
   end;
 

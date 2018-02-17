@@ -1029,7 +1029,7 @@ begin
 
   //frmmodulo.qrrelatorio.fieldbyname('linha6').asstring := IntToStr(frmvenda.qrvenda_produto.RecordCount);
   frmmodulo.qrrelatorio.post;
-  FXvenda.LoadFromFile('c:\Store_Protheus\server\rel\f000110.fr3');
+  FXvenda.LoadFromFile('c:\Softlogus\server\rel\f000110.fr3');
   FXvenda.ShowReport;
 end;
 
@@ -1060,9 +1060,9 @@ begin
     frmmodulo.qrrelatorio.fieldbyname('linha4').asstring := formatfloat('###,###,##0.00', qrcontasreceber.fieldbyname('valor_atual').asfloat);
     frmmodulo.qrrelatorio.fieldbyname('linha6').asstring := IntToStr(QRPRODUTO_MOV.RecordCount);
     frmmodulo.qrrelatorio.post;
-    FXvenda.LoadFromFile('c:\Store_Protheus\server\rel\f000074.fr3');
+    FXvenda.LoadFromFile('c:\Softlogus\server\rel\f000074.fr3');
     FXvenda.ShowReport;
-    FXvenda.LoadFromFile('c:\Store_Protheus\server\rel\f000153.fr3');
+    FXvenda.LoadFromFile('c:\Softlogus\server\rel\f000153.fr3');
     FXvenda.ShowReport;
 
   end
@@ -1073,7 +1073,7 @@ begin
     frmmodulo.qrrelatorio.edit;
     frmmodulo.qrrelatorio.fieldbyname('linha6').asstring := IntToStr(QRPRODUTO_MOV.RecordCount);
     frmmodulo.qrrelatorio.post;
-    FXvenda.LoadFromFile('c:\Store_Protheus\server\rel\f000050.fr3');
+    FXvenda.LoadFromFile('c:\Softlogus\server\rel\f000050.fr3');
     FXvenda.ShowReport;
 
   end;
@@ -1617,11 +1617,11 @@ begin
   frmmodulo.qrrelatorio.fieldbyname('linha4').asstring := formatfloat('###,###,##0.00', qrcontasreceber.fieldbyname('valor_atual').asfloat);
   frmmodulo.qrrelatorio.fieldbyname('linha6').asstring := IntToStr(QRPRODUTO_MOV.RecordCount);
   frmmodulo.qrrelatorio.post;
-  FXvenda.LoadFromFile('c:\Store_Protheus\server\rel\f000110.fr3');
+  FXvenda.LoadFromFile('c:\Softlogus\server\rel\f000110.fr3');
   FXvenda.ShowReport;
   if QRCONTASRECEBER.RECORDCOUNT > 0 then
   begin
-    FXvenda.LoadFromFile('c:\Store_Protheus\server\rel\f000049.fr3');
+    FXvenda.LoadFromFile('c:\Softlogus\server\rel\f000049.fr3');
     FXvenda.ShowReport;
   end;
 
@@ -1635,16 +1635,16 @@ procedure Tfrmnotas_venda_impressao.BitBtn1Click(Sender: TObject);
 begin
   if combo_modelo.Text = '04 - Formulário Contínuo - Razão' then
   begin
-    fXVENDA.LoadFromFile('c:\Store_Protheus\server\rel\f000110.fr3');
+    fXVENDA.LoadFromFile('c:\Softlogus\server\rel\f000110.fr3');
     fXVENDA.designreport;
   end
   else
   begin
-    fXVENDA.LoadFromFile('c:\Store_Protheus\server\rel\f000110.fr3');
+    fXVENDA.LoadFromFile('c:\Softlogus\server\rel\f000110.fr3');
     fXVENDA.designreport;
   end;
 
-  //FXvenda.LoadFromFile('c:\Store_Protheus\server\rel\f000074.fr3');
+  //FXvenda.LoadFromFile('c:\Softlogus\server\rel\f000074.fr3');
   //FXvenda.DesignReport;
 
 
@@ -1687,11 +1687,11 @@ begin
   frmmodulo.qrrelatorio.fieldbyname('linha4').asstring := formatfloat('###,###,##0.00', qrcontasreceber.fieldbyname('valor_atual').asfloat);
   frmmodulo.qrrelatorio.fieldbyname('linha6').asstring := IntToStr(QRPRODUTO_MOV.RecordCount);
   frmmodulo.qrrelatorio.post;
-  FXvenda.LoadFromFile('c:\Store_Protheus\server\rel\f000154.fr3');
+  FXvenda.LoadFromFile('c:\Softlogus\server\rel\f000154.fr3');
   FXvenda.ShowReport;
   if QRCONTASRECEBER.RECORDCOUNT > 0 then
   begin
-    FXvenda.LoadFromFile('c:\Store_Protheus\server\rel\f000153.fr3');
+    FXvenda.LoadFromFile('c:\Softlogus\server\rel\f000153.fr3');
     FXvenda.ShowReport;
   end;
 end;
@@ -1744,7 +1744,7 @@ begin
 
 
   frmmodulo.qrrelatorio.post;
-  FXvenda.LoadFromFile('c:\Store_Protheus\server\rel\f000155.fr3');
+  FXvenda.LoadFromFile('c:\Softlogus\server\rel\f000155.fr3');
   fxvenda.ShowReport;
 end;
 

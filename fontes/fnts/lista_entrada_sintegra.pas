@@ -246,7 +246,7 @@ begin
     else
       frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring := 'RELAÇÃO DE NOTA FISCAL DE EMITIDA - FORNECEDOR';
 
-    FXNOTA.LoadFromFile('\Store_Protheus\server\rel\f000094.fr3');
+    FXNOTA.LoadFromFile('\Softlogus\server\rel\f000094.fr3');
     FXNOTA.ShowReport;
   end;
 
@@ -265,7 +265,7 @@ begin
       qrnota.SQL.ADD('SELECT * FROM SINTEGRA_SAIDA ORDER BY CFOP,NOTAFISCAL');
     end;
     qrnota.open;
-    FXNOTA.LoadFromFile('\Store_Protheus\server\rel\f000095.fr3');
+    FXNOTA.LoadFromFile('\Softlogus\server\rel\f000095.fr3');
     FXNOTA.ShowReport;
   end;
 
@@ -286,7 +286,7 @@ begin
     end;
 
     qrnota.open;
-    FXNOTA.LoadFromFile('\Store_Protheus\server\rel\f000127.fr3');
+    FXNOTA.LoadFromFile('\Softlogus\server\rel\f000127.fr3');
     FXNOTA.ShowReport;
   end;
 
@@ -305,17 +305,17 @@ begin
 
   if combo_relatorio.itemindex = 0 then
   begin
-    FXNOTA.LoadFromFile('\Store_Protheus\server\rel\f000094.fr3');
+    FXNOTA.LoadFromFile('\Softlogus\server\rel\f000094.fr3');
     FXNOTA.DesignReport;
   end;
   if combo_relatorio.itemindex = 1 then
   begin
-    FXNOTA.LoadFromFile('\Store_Protheus\server\rel\f000095.fr3');
+    FXNOTA.LoadFromFile('\Softlogus\server\rel\f000095.fr3');
     FXNOTA.DesignReport;
   end;
   if combo_relatorio.itemindex = 2 then
   begin
-    FXNOTA.LoadFromFile('\Store_Protheus\server\rel\f000127.fr3');
+    FXNOTA.LoadFromFile('\Softlogus\server\rel\f000127.fr3');
     FXNOTA.DesignReport;
   end;
 

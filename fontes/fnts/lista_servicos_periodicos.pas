@@ -110,7 +110,7 @@ begin
   qrservicos_periodicos.Open;
 
   FRMMODULO.QRRELATORIO.FIELDBYNAME('LINHA1').ASSTRING := 'SERVIÇOS PERIODICOS';
-  fxservicos_periodicos.LoadFromFile('\Store_Protheus\server\rel\f000129.fr3');
+  fxservicos_periodicos.LoadFromFile('\Softlogus\server\rel\f000129.fr3');
   fxservicos_periodicos.ShowReport;
   frmPrincipal.logUC('Abriu Relatorio Servicos Periodicos', 0);
 end;
@@ -126,7 +126,7 @@ end;
 procedure Tfrmlista_servicos_periodicos.BitBtn1Click(Sender: TObject);
 begin
 
-  fxservicos_periodicos.LoadFromFile('\Store_Protheus\server\rel\F000129.fr3');
+  fxservicos_periodicos.LoadFromFile('\Softlogus\server\rel\F000129.fr3');
   fxservicos_periodicos.DesignReport;
 end;
 

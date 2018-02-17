@@ -244,7 +244,7 @@ begin
     QRCONTASPAGAR.REFRESH;
 
     frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring := 'RELATÓRIO DE CONTAS A PAGAR';
-    fxcontasPAGAR.LoadFromFile('\Store_Protheus\server\rel\f000063.fr3');
+    fxcontasPAGAR.LoadFromFile('\Softlogus\server\rel\f000063.fr3');
     fxcontasPAGAR.ShowReport;
   end;
 
@@ -259,7 +259,7 @@ begin
     QRCONTASRECEBER.REFRESH;
 
     frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring := 'RELATÓRIO DE CONTAS A RECEBER';
-    fxcontas_receber.LoadFromFile('\Store_Protheus\server\rel\f000059.fr3');
+    fxcontas_receber.LoadFromFile('\Softlogus\server\rel\f000059.fr3');
     fxcontas_receber.ShowReport;
   end;
 
@@ -274,7 +274,7 @@ begin
       qrresumo.Params.ParamByName('dataf').asdatetime := dateedit2.date;
       QRRESUMO.OPEN;
       frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring := 'RELATÓRIO DE CONTAS A RECEBER - RESUMIDO POR CLIENTE';
-      fxcontas_receber.LoadFromFile('\Store_Protheus\server\rel\f000060.fr3');
+      fxcontas_receber.LoadFromFile('\Softlogus\server\rel\f000060.fr3');
       fxcontas_receber.ShowReport;
   end;
   if combo_relatorio.text = 'RELAÇÃO AGRUPADA POR FORMA DE PAGAMENTO' then
@@ -288,7 +288,7 @@ begin
     QRCONTASRECEBER.REFRESH;
 
     frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring := 'RELATÓRIO DE CONTAS A RECEBER POR FORMA DE RECEBTO.';
-    fxcontas_receber.LoadFromFile('\Store_Protheus\server\rel\f000062.fr3');
+    fxcontas_receber.LoadFromFile('\Softlogus\server\rel\f000062.fr3');
     fxcontas_receber.ShowReport;
   end;
   }
@@ -306,7 +306,7 @@ begin
 
   if combo_relatorio.Text = 'RELAÇÃO SINTÉTICA' then
   begin
-    fxcontasPAGAR.LoadFromFile('\Store_Protheus\server\rel\f000063.fr3');
+    fxcontasPAGAR.LoadFromFile('\Softlogus\server\rel\f000063.fr3');
     fxcontasPAGAR.designreport;
   end;
 

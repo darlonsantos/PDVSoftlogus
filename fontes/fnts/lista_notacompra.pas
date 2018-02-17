@@ -301,7 +301,7 @@ begin
 
 
     frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring := 'RELAÇÃO DE NOTA FISCAL DE COMPRA';
-    FXNOTA.LoadFromFile('\Store_Protheus\server\rel\f000088.fr3');
+    FXNOTA.LoadFromFile('\Softlogus\server\rel\f000088.fr3');
     FXNOTA.ShowReport;
   end;
 
@@ -315,7 +315,7 @@ begin
     qrnota.open;
 
     frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring := 'RELAÇÃO DE ITENS DA NOTA FISCAL DE COMPRA';
-    FXNOTA.LoadFromFile('\Store_Protheus\server\rel\f000088_3.fr3');
+    FXNOTA.LoadFromFile('\Softlogus\server\rel\f000088_3.fr3');
     FXNOTA.ShowReport;
   end;
 
@@ -329,7 +329,7 @@ begin
     qrnota.open;
 
     frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring := 'RELAÇÃO DE NOTAS POR CFOP';
-    FXNOTA.LoadFromFile('\Store_Protheus\server\rel\f000088_2.fr3');
+    FXNOTA.LoadFromFile('\Softlogus\server\rel\f000088_2.fr3');
     FXNOTA.ShowReport;
   end;
 
@@ -343,7 +343,7 @@ begin
     qrnota.open;
 
     frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring := 'RELAÇÃO DE NOTAS POR CFOP COM ITENS';
-    FXNOTA.LoadFromFile('\Store_Protheus\server\rel\f000088_4.fr3');
+    FXNOTA.LoadFromFile('\Softlogus\server\rel\f000088_4.fr3');
     FXNOTA.ShowReport;
   end;
 
@@ -372,7 +372,7 @@ begin
     qrcompra_produto.open;
     frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring := 'RELAÇÃO DE COMPRAS DE PRODUTOS';
     frmmodulo.qrrelatorio.fieldbyname('LINHA2').asstring := 'Período: ' + dateedit1.text + ' a ' + dateedit2.text;
-    FXNOTA.LoadFromFile('\Store_Protheus\server\rel\f000088.fr3');
+    FXNOTA.LoadFromFile('\Softlogus\server\rel\f000088.fr3');
     FXNOTA.ShowReport;
   end;
 
@@ -417,7 +417,7 @@ begin
     qrentrada.open;
 
     frmmodulo.qrrelatorio.fieldbyname('LINHA1').asstring := dateedit1.text + ' a ' + dateedit2.text;
-    FXNOTA.LoadFromFile('\Store_Protheus\server\rel\f000088_4.fr3');
+    FXNOTA.LoadFromFile('\Softlogus\server\rel\f000088_4.fr3');
     FXNOTA.ShowReport;
   end;
 
@@ -439,24 +439,24 @@ begin
 
   if combo_relatorio.itemindex = 0 then
   begin
-    FXNOTA.LoadFromFile('\Store_Protheus\server\rel\f000088.fr3');
+    FXNOTA.LoadFromFile('\Softlogus\server\rel\f000088.fr3');
     FXNOTA.DesignReport;
   end;
   if combo_relatorio.itemindex = 1 then
   begin
-    FXNOTA.LoadFromFile('\Store_Protheus\server\rel\f000088_3.fr3');
+    FXNOTA.LoadFromFile('\Softlogus\server\rel\f000088_3.fr3');
     FXNOTA.DesignReport;
   end;
 
   if combo_relatorio.ItemIndex = 2 then
   begin
-    FXNOTA.LoadFromFile('\Store_Protheus\server\rel\f000088_5.fr3');
+    FXNOTA.LoadFromFile('\Softlogus\server\rel\f000088_5.fr3');
     FXNOTA.DesignReport;
   end;
 
   if combo_relatorio.ItemIndex = 3 then
   begin
-    FXNOTA.LoadFromFile('\Store_Protheus\server\rel\f000088_4.fr3');
+    FXNOTA.LoadFromFile('\Softlogus\server\rel\f000088_4.fr3');
     FXNOTA.DesignReport;
   end;
 

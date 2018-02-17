@@ -822,7 +822,7 @@ begin
 
     FRMMODULO.qrrelatorio.fieldbyname('LINHA1').ASSTRING :=
       'POSIÇÃO DE ESTOQUE';
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000184.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000184.fr3');
     fxproduto.ShowReport;
 
   end;
@@ -838,7 +838,7 @@ begin
     qrproduto.OPEN;
     FRMMODULO.qrrelatorio.fieldbyname('LINHA1').ASSTRING :=
       'RELAÇÃO DE PRODUTOS - SINTÉTICA';
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000025.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000025.fr3');
     fxproduto.ShowReport;
   end;
 
@@ -871,7 +871,7 @@ begin
       'RELAÇÃO DE PRODUTOS - ETIQUETAS';
     FRMMODULO.qrrelatorio.fieldbyname('LINHA2').ASSTRING := 'Taxa de Juros ' +
       FORMATFLOAT('###,###,##0.00', vjuros) + '% a.m.';
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000076.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000076.fr3');
     fxproduto.ShowReport;
   end;
 
@@ -886,7 +886,7 @@ begin
     qrproduto.OPEN;
     FRMMODULO.qrrelatorio.fieldbyname('LINHA1').ASSTRING :=
       'INVENTÁRIO DE ESTOQUE ATUAL';
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000026.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000026.fr3');
     fxproduto.ShowReport;
   end;
 
@@ -902,7 +902,7 @@ begin
 
     FRMMODULO.qrrelatorio.fieldbyname('LINHA1').ASSTRING :=
       'RELATÓRIO DE PRODUTOS PESADOS';
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000075.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000075.fr3');
     fxproduto.ShowReport;
   end;
 
@@ -974,7 +974,7 @@ begin
     FRMMODULO.qrrelatorio.fieldbyname('LINHA1').ASSTRING :=
       'PRODUTOS - ESTOQUE COM GRADE';
 
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000027.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000027.fr3');
     fxproduto.ShowReport;
   end;
 
@@ -1006,7 +1006,7 @@ begin
 
     FRMMODULO.qrrelatorio.fieldbyname('LINHA1').ASSTRING :=
       'PRODUTOS - ESTOQUE COM SERIAIS';
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000028.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000028.fr3');
     fxproduto.ShowReport;
   end;
 
@@ -1023,7 +1023,7 @@ begin
 
     FRMMODULO.qrrelatorio.fieldbyname('LINHA1').ASSTRING :=
       'PRODUTOS - ESTOQUE POR FORNECEDOR';
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000029.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000029.fr3');
     fxproduto.ShowReport;
   end;
 
@@ -1039,7 +1039,7 @@ begin
 
     FRMMODULO.qrrelatorio.fieldbyname('LINHA1').ASSTRING :=
       'PRODUTOS - PREÇOS POR FORNECEDOR';
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000030.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000030.fr3');
     fxproduto.ShowReport;
   end;
 
@@ -1056,7 +1056,7 @@ begin
 
     FRMMODULO.qrrelatorio.fieldbyname('LINHA1').ASSTRING :=
       'PRODUTOS - ESTOQUE POR FABRICANTE';
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000017.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000017.fr3');
     fxproduto.ShowReport;
   end;
 
@@ -1071,7 +1071,7 @@ begin
     qrproduto.OPEN;
     FRMMODULO.qrrelatorio.fieldbyname('LINHA1').ASSTRING :=
       'PRODUTOS - PREÇOS POR FABRICANTE';
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000016.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000016.fr3');
     fxproduto.ShowReport;
   end;
 
@@ -1087,7 +1087,7 @@ begin
 
     FRMMODULO.qrrelatorio.fieldbyname('LINHA1').ASSTRING :=
       'PRODUTOS - TABELA DE PREÇOS';
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000031.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000031.fr3');
     fxproduto.ShowReport;
   end;
 
@@ -1103,7 +1103,7 @@ begin
 
     FRMMODULO.qrrelatorio.fieldbyname('LINHA1').ASSTRING :=
       'TABELA DE PREÇOS - A PRAZO';
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000128.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000128.fr3');
     fxproduto.ShowReport;
   end;
 
@@ -1130,7 +1130,7 @@ begin
 
     FRMMODULO.qrrelatorio.fieldbyname('LINHA1').ASSTRING :=
       'RELAÇÃO DE PRODUTOS / MOVIMENTO';
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000020.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000020.fr3');
     fxproduto.ShowReport;
   end;
 
@@ -1159,7 +1159,7 @@ begin
     FRMMODULO.qrrelatorio.fieldbyname('linha2').ASSTRING := 'PERÍODO: ' +
       ldataini_remarcado.Text + ' a ' + ldatafim_remarcado.Text;
 
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000020.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000020.fr3');
     fxproduto.ShowReport;
   end;
 
@@ -1186,7 +1186,7 @@ begin
       inttostr(TRUNC(ldatafim_remarcado.Date - ldataini_remarcado.Date))
       + ' DIAS';
 
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000130.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000130.fr3');
     fxproduto.ShowReport;
   end;
 
@@ -1209,7 +1209,7 @@ begin
 
     FRMMODULO.qrrelatorio.fieldbyname('LINHA1').ASSTRING :=
       'RELAÇÃO DE ESTOQUE - GRUPO/SUBGRUPO';
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000018.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000018.fr3');
     fxproduto.ShowReport;
     qrproduto.MasterSource := nil;
     qrproduto.MasterFields := '';
@@ -1227,7 +1227,7 @@ begin
     qrproduto.OPEN;
     FRMMODULO.qrrelatorio.fieldbyname('LINHA1').ASSTRING :=
       'RELAÇÃO DE ESTOQUE - ESTOQUE MINIMO';
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000101.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000101.fr3');
     fxproduto.ShowReport;
     qrproduto.MasterSource := nil;
     qrproduto.MasterFields := '';
@@ -1247,7 +1247,7 @@ begin
 
     FRMMODULO.qrrelatorio.fieldbyname('LINHA1').ASSTRING :=
       'RELAÇÃO DE PRODUTOS POR ALÍQUOTA';
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000102.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000102.fr3');
     fxproduto.ShowReport;
     qrproduto.MasterSource := nil;
     qrproduto.MasterFields := '';
@@ -1274,7 +1274,7 @@ begin
 
     FRMMODULO.qrrelatorio.fieldbyname('LINHA1').ASSTRING :=
       'TABELA DE PREÇOS - GRUPO/SUBGRUPO';
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000019.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000019.fr3');
     fxproduto.ShowReport;
     qrproduto.MasterSource := nil;
     qrproduto.MasterFields := '';
@@ -1297,7 +1297,7 @@ begin
       'PRODUTOS REMARCADOS';
     FRMMODULO.qrrelatorio.fieldbyname('linha2').ASSTRING := 'PERÍODO: ' +
       ldataini_remarcado.Text + ' a ' + ldatafim_remarcado.Text;
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000025.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000025.fr3');
     fxproduto.ShowReport;
   end;
 
@@ -1378,7 +1378,7 @@ begin
     FRMMODULO.qrrelatorio.fieldbyname('linha3').ASSTRING := 'PERÍODO: ' +
       ldataini_remarcado.Text + ' a ' + ldatafim_remarcado.Text;
 
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000142_1.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000142_1.fr3');
     fxproduto.ShowReport;
 
   end;
@@ -1450,7 +1450,7 @@ begin
     FRMMODULO.qrrelatorio.fieldbyname('linha3').ASSTRING := 'PERÍODO: ' +
       ldataini_remarcado.Text + ' a ' + ldatafim_remarcado.Text;
 
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000142.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000142.fr3');
     fxproduto.ShowReport;
 
   end;
@@ -1498,7 +1498,7 @@ begin
     FRMMODULO.qrrelatorio.fieldbyname('linha3').ASSTRING := 'PERÍODO: ' +
       ldataini_remarcado.Text + ' a ' + ldatafim_remarcado.Text;
 
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000142_3.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000142_3.fr3');
     fxproduto.ShowReport;
 
   end;
@@ -1547,7 +1547,7 @@ begin
     FRMMODULO.qrrelatorio.fieldbyname('linha3').ASSTRING := 'PERÍODO: ' +
       ldataini_remarcado.Text + ' a ' + ldatafim_remarcado.Text;
 
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000142_2.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000142_2.fr3');
     fxproduto.ShowReport;
 
   end;
@@ -1566,7 +1566,7 @@ begin
 
     FRMMODULO.qrrelatorio.fieldbyname('LINHA1').ASSTRING :=
       'INVENTÁRIO DE ESTOQUE ANTERIOR';
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000098.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000098.fr3');
     fxproduto.ShowReport;
   end;
 
@@ -1583,7 +1583,7 @@ begin
 
     FRMMODULO.qrrelatorio.fieldbyname('LINHA1').ASSTRING :=
       'INVENTÁRIO DE ESTOQUE ANTERIOR POR CST';
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000103.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000103.fr3');
     fxproduto.ShowReport;
   end;
 
@@ -1615,7 +1615,7 @@ begin
       'PRODUTOS - TABELA DE PREÇOS';
     FRMMODULO.qrrelatorio.fieldbyname('linha3').ASSTRING := 'PERÍODO: ' +
       ldataini_remarcado.Text + ' a ' + ldatafim_remarcado.Text;
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000190.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000190.fr3');
     fxproduto.ShowReport;
   end;
 
@@ -1891,7 +1891,7 @@ begin
     FRMMODULO.qrrelatorio.fieldbyname('linha2').ASSTRING := 'PERÍODO: ' +
       ldataini_remarcado.Text + ' a ' + ldatafim_remarcado.Text;
 
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000143.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000143.fr3');
     fxproduto.ShowReport;
 
     {
@@ -1928,7 +1928,7 @@ begin
     qrproducao.SQL.ADD('order by m.codproduto, n.data_lancamento');
     qrproducao.OPEN;
 
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000196.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000196.fr3');
     fxproduto.ShowReport;
   end;
   frmPrincipal.logUC('Abriu Relatorio Produtos - ' + frmPrincipal.RemoveAcentos
@@ -2217,131 +2217,131 @@ begin
   end;
   if combo_relatorio.Text = 'RELAÇÃO DE ESTOQUE - SINTÉTICA' then
   begin
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000025.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000025.fr3');
     fxproduto.designreport;
   end;
   if combo_relatorio.Text = '  TABELA DE PREÇOS - A PRAZO' then
   begin
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000128.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000128.fr3');
     fxproduto.designreport;
   end;
   if combo_relatorio.Text = 'INVENTÁRIO DE ESTOQUE ATUAL' then
   begin
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000026.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000026.fr3');
     fxproduto.designreport;
   end;
   if combo_relatorio.Text = 'INVENTÁRIO DE ESTOQUE ANTERIOR' then
   begin
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000098.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000098.fr3');
     fxproduto.designreport;
   end;
   if combo_relatorio.Text = 'INVENTÁRIO DE ESTOQUE ANTERIOR POR CST' then
   begin
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000103.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000103.fr3');
     fxproduto.designreport;
   end;
   if combo_relatorio.Text = 'RELAÇÃO DE ESTOQUE - COM GRADE' then
   begin
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000027.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000027.fr3');
     fxproduto.designreport;
   end;
   if combo_relatorio.Text = 'RELAÇÃO DE ESTOQUE - COM SERIAIS' then
   begin
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000028.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000028.fr3');
     fxproduto.designreport;
   end;
   if combo_relatorio.Text = 'ETIQUETAS' then
   begin
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000076.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000076.fr3');
     fxproduto.designreport;
   end;
   if combo_relatorio.Text = 'RELAÇÃO DE PRODUTOS DE BALANÇA' then
   begin
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000075.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000075.fr3');
     fxproduto.designreport;
   end;
   if combo_relatorio.Text = 'RELAÇÃO DE ESTOQUE - POR FORNECEDOR' then
   begin
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000029.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000029.fr3');
     fxproduto.designreport;
   end;
 
   if combo_relatorio.Text = 'RELAÇÃO DE ESTOQUE - ESTOQUE MINIMO' then
   begin
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000101.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000101.fr3');
     fxproduto.designreport;
   end;
 
   if combo_relatorio.Text = 'RELAÇÃO DE PRODUTOS POR ALÍQUOTA' then
   begin
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000102.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000102.fr3');
     fxproduto.designreport;
   end;
 
   if combo_relatorio.Text = 'TABELA DE PREÇOS - POR FORNECEDOR' then
   begin
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000030.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000030.fr3');
     fxproduto.designreport;
   end;
 
   if combo_relatorio.Text = 'RELAÇÃO DE ESTOQUE - POR MARCA' then
   begin
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000017.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000017.fr3');
     fxproduto.designreport;
   end;
 
   if combo_relatorio.Text = 'TABELA DE PREÇOS - POR MARCA' then
   begin
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000016.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000016.fr3');
     fxproduto.designreport;
   end;
   if combo_relatorio.Text = 'TABELA DE PREÇOS - SINTÉTICA' then
   begin
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000031.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000031.fr3');
     fxproduto.designreport;
   end;
 
   if combo_relatorio.Text = 'RELAÇÃO DE PRODUTOS COM MOVIMENTAÇÃO' then
   begin
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000020.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000020.fr3');
     fxproduto.designreport;
   end;
   if combo_relatorio.Text = 'RELAÇÃO DE COMPRAS' then
   begin
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000020.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000020.fr3');
     fxproduto.designreport;
   end;
   if combo_relatorio.Text = 'RELAÇÃO DE ESTOQUE - POR GRUPO/SUBGRUPO' then
   begin
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000018.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000018.fr3');
     fxproduto.designreport;
   end;
   if combo_relatorio.Text = 'TABELA DE PREÇOS - POR GRUPO/SUBGRUPO' then
   begin
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000019.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000019.fr3');
     fxproduto.designreport;
   end;
 
   if combo_relatorio.Text = 'PRODUTOS REMARCADOS' then
   begin
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000025.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000025.fr3');
     fxproduto.designreport;
   end;
   if combo_relatorio.Text = 'RELAÇÃO COM PREÇOS (VENDA/SUGERIDO/LUCRO 0)' then
   begin
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000190.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000190.fr3');
     fxproduto.designreport;
   end;
 
   if combo_relatorio.Text = 'RESUMO FISCAL' then
   begin
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000143.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000143.fr3');
     fxproduto.designreport;
   end;
 
   if combo_relatorio.Text = 'REGISTRO DE CONTROLE DE PRODUÇÃO E DO ESTOQUE' then
   begin
-    fxproduto.LoadFromFile('\Store_Protheus\server\rel\f000196.fr3');
+    fxproduto.LoadFromFile('\Softlogus\server\rel\f000196.fr3');
     fxproduto.designreport;
   end;
 
